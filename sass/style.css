@@ -3,24 +3,32 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  padding: 0;
 }
 
 h1 {
-  width: 200px;
+  background-color: darkgray;
+  margin: 0;
+  width: 100%;
+  text-align: center;
 }
 
-.new {
-  position: absolute;
-  left: 210px;
-  bottom: 205px;
-  padding: 5px 10px;
-  border-radius: 2px;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  background-color: #99E2D0;
-  color: green;
-  z-index: 1;
+h1 .title {
+  border: 1px solid;
+  padding: 20px;
+  width: 350px;
+}
+
+.form {
+  background-color: beige;
+}
+
+.choice {
+  background-color: darkkhaki;
+}
+
+.browse-restaurants {
+  background-color: #afa8af;
 }
 
 .restaurant-card {
@@ -30,5 +38,40 @@ h1 {
 
 .restaurant-card img {
   width: 100%;
+}
+
+footer {
+  background-color: #353535;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid red;
+  width: 100%;
+}
+
+.more h3 {
+  color: #ffff;
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+}
+
+.more a {
+  text-decoration: none;
+  color: #ffff;
+  padding: 2px;
+}
+
+img {
+  width: 200px;
 }
 /*# sourceMappingURL=style.css.map */
