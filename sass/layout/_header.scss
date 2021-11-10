@@ -1,0 +1,42 @@
+// pour le header et le footer
+// header
+h1 {
+  background-color: darkgray;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  .title {
+    border: 1px solid;
+    padding: 20px;
+    width: 350px;
+  }
+}
+.form{
+background-color: beige;
+}
+
+
+
+
+// footer
+footer{
+background-color:#353535;
+
+}
+.contact{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+border: 1px solid red;
+width:100%;
+}
+.more h3{
+color: #ffff;
+font-family: $title;
+font-size: 30px;
+}
+.more a{
+text-decoration: none;
+color: #ffff;
+padding: 2px;
+}
