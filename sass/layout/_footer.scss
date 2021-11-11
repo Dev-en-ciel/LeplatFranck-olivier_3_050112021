@@ -1,0 +1,24 @@
+// footer
+footer{
+background-color:$color-black;
+
+}
+.about{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width:100%;
+}
+.contact h3{
+border: 1px solid red;
+color: $color-txt-white;
+font-family: $title;
+// font-family: $text;
+font-size: 25px;
+margin: 15px;
+}
+.contact ul{
+text-decoration: none;
+color: $color-txt-white;
+padding: 2px;
+}
