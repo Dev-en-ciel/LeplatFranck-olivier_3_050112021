@@ -1,5 +1,50 @@
 // styles for buttons
-.choice{
-font-size: 18px;
+.choice h2{
+font-size: 25px;
 font-family: $text;
+margin: 20px;
+}
+.choice-btn{
+margin:0 40px;
+}
+// .choice-btn a{
+// padding: 0 20px;
+// width: 25%;
+// }
+.choice-btn ul{
+display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 0;
+}
+
+.choice-btn li{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+padding: 25px;
+margin-top:20px;
+border-radius: 15px;
+box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.20);
+background-color: #cecece23;
+font-family: $text;
+font-size:16px;
+font-weight: 600;
+color: rgb(3, 3, 3);
+}
+.number{
+position:relative;
+right: 30px;
+text-align: center;
+border: 1px solid white;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: $color-primary;
+color: $color-txt-white;
+}
+.choice-btn li i{
+margin:0px 20px 0px -5px;
+color: #918f8ffd;
+font-size: 18px;
 }
