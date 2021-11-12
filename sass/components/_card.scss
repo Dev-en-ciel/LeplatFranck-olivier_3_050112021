@@ -1,32 +1,66 @@
 // section restaurants
 .browse-restaurants {
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
-  background-color: #fefefe;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #f6f6f6;
+}
+.browse-restaurants h2 {
+  width: 100%;
+  font-size: 25px;
+  font-family: $text;
+  margin: 20px 20px 0;
+  align-items: center;
 }
 .restaurant-card {
-  border: 1px solid;
+  justify-content: center;
   border-radius: 20px 20px 0px 0px;
-  width: 336px;
+  width: 400px;
+  margin: 20px 20px 30px;
 }
 .restaurant-card img {
   object-fit: cover;
   width: 100%;
-  height: 170px;
+  height: 180px;
   border-radius: 20px 20px 0px 0px;
 }
-.rest-card-desription {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
 .new {
+  position: relative;
+  bottom: 165px;
+  left: 310px;
+  z-index: 1;
+  padding: 8px;
+  background-color: $color-tertiary;
+}
+
+.card-rest {
 position: relative;
-top: 20px;
-left: 250px;
-z-index: 1;
-padding: 10px;
-background-color: $color-tertiary;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: black;
+  font-family: $text;
+  margin: -20px 0;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.card-rest h3,
+p {
+  margin:2px 20px;
+}
+.card-rest h3 {
+  margin-top:10px;
+}
+.card-rest p {
+  margin-bottom:20px;
+}
+.heart{
+ position:absolute;
+ font-size: 20px;
+ right: 30px;
+ bottom: 20px;
 }
