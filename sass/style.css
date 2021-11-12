@@ -93,6 +93,7 @@ h1 .title {
 
 .choice-btn {
   margin: 0 40px;
+  padding-bottom: 50px;
 }
 
 .choice-btn ul {
@@ -152,48 +153,94 @@ h1 .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  background-color: #fefefe;
+  padding: 20px;
+  background-color: #f6f6f6;
+}
+
+.browse-restaurants h2 {
+  width: 100%;
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+  margin: 20px 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .restaurant-card {
-  border: 1px solid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 20px 20px 0px 0px;
-  width: 336px;
+  width: 400px;
+  margin: 20px 20px 30px;
 }
 
 .restaurant-card img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 170px;
+  height: 180px;
   border-radius: 20px 20px 0px 0px;
-}
-
-.rest-card-desription {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .new {
   position: relative;
-  top: 20px;
-  left: 250px;
+  bottom: 165px;
+  left: 310px;
   z-index: 1;
-  padding: 10px;
+  padding: 8px;
   background-color: #99e2d0;
+}
+
+.card-rest {
+  position: relative;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  margin: -20px 0;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.card-rest h3,
+p {
+  margin: 2px 20px;
+}
+
+.card-rest h3 {
+  margin-top: 10px;
+}
+
+.card-rest p {
+  margin-bottom: 20px;
+}
+
+.heart {
+  position: absolute;
+  font-size: 20px;
+  right: 30px;
+  bottom: 20px;
 }
 
 body {
@@ -204,7 +251,6 @@ body {
 }
 
 a {
-  color: #ffff;
   text-decoration: none;
 }
 
