@@ -1,0 +1,44 @@
+// style pour le pages menu
+.restaurant {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -50px;
+  border-radius: 30px;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 19px;
+  font-family: $title;
+  margin: 0 30px;
+  .icon {
+    font-size: 22px;
+  }
+}
+.menu__card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-right: 30px;
+  h3 {
+    width: 100%;
+    font-family: $text;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 10px 20px;
+  }
+}
+
+.menu__choice {
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin:10px 30px;
+  padding: 8px;
+  border-radius: 20px;
+}
