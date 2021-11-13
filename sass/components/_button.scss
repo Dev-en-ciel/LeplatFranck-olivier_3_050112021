@@ -1,47 +1,66 @@
 // styles for buttons
-.choice h2{
-font-size: 25px;
-font-family: $text;
-margin: 20px;
+.choice h2 {
+  font-size: 25px;
+  font-family: $text;
+  margin: 20px;
 }
-.choice-btn{
-margin:0 40px;
-padding-bottom: 50px;
+.choice-btn {
+  margin: 0 40px;
+  padding-bottom: 50px;
 }
-.choice-btn ul{
-display: flex;
-justify-content: center;
-flex-direction: column;
-padding: 0;
+.choice-btn ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0;
 }
 
-.choice-btn li{
-display: flex;
-flex-wrap: wrap;
-align-items: center;
-padding: 25px;
-margin-top:20px;
-border-radius: 15px;
-box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.20);
-background-color: #cecece23;
-font-family: $text;
-font-size:16px;
-font-weight: 600;
-color: rgb(3, 3, 3);
+.choice-btn li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 15px;
+  box-shadow: -3px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: #cecece23;
+  font-family: $text;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(3, 3, 3);
 }
-.number{
-position:relative;
-right: 30px;
+//   .choice-btn li:hover {
+//     background-color:$color-secondary;
+//   }
+.number {
+  position: relative;
+  right: 35px;
+  text-align: center;
+  border: 1px solid white;
+  width: 22px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $color-primary;
+  color: $color-txt-white;
+}
+.choice-btn li i {
+  margin: 0px 20px 0px -5px;
+  color: #918f8ffd;
+  font-size: 18px;
+}
+// bouton pour les pages restaurants
+
+.order{
+align-self: center;
+margin: 30px 0;
+padding: 20px;
+border-radius: 30px;
+width: 200px;
 text-align: center;
-border: 1px solid white;
-width: 20px;
-height: 20px;
-border-radius: 50%;
+font-size: 20px;
 background-color: $color-primary;
+a{
 color: $color-txt-white;
+font-family: $text;
 }
-.choice-btn li i{
-margin:0px 20px 0px -5px;
-color: #918f8ffd;
-font-size: 18px;
 }

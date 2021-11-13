@@ -19,48 +19,50 @@
   justify-content: center;
   border-radius: 20px 20px 0px 0px;
   width: 400px;
-  margin: 20px 20px 30px;
+  margin: 20px 50px 30px;
 }
 .restaurant-card img {
   object-fit: cover;
   width: 100%;
-  height: 180px;
+  height: 185px;
   border-radius: 20px 20px 0px 0px;
 }
 .new {
-  position: relative;
-  bottom: 165px;
-  left: 310px;
-  z-index: 1;
+position: relative;
+  // width: 60px;
+  margin: 15px;
+  top: 40px;
+  left: 135px;
   padding: 8px;
   background-color: $color-tertiary;
 }
 
 .card-rest {
-position: relative;
+  position: relative;
+  box-shadow: 4px 4px 8px rgba(107, 107, 107, 0.322);
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: black;
   font-family: $text;
-  margin: -20px 0;
+  // margin: -40px 0;
   border-radius: 0px 0px 20px 20px;
 }
 
 .card-rest h3,
 p {
-  margin:2px 20px;
+  margin: 2px 20px;
 }
 .card-rest h3 {
-  margin-top:10px;
+  margin-top: 10px;
 }
 .card-rest p {
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
-.heart{
- position:absolute;
- font-size: 20px;
- right: 30px;
- bottom: 20px;
+.heart {
+  position: absolute;
+  font-size: 20px;
+  right: 30px;
+  bottom: 20px;
 }
