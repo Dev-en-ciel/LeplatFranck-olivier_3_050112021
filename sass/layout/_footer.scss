@@ -10,15 +10,24 @@ justify-content: space-between;
 width:100%;
 }
 .contact h3{
-border: 1px solid red;
 color: $color-txt-white;
 font-family: $title;
-// font-family: $text;
-font-size: 25px;
-margin: 15px;
+font-size: 20px;
+margin: 0;
+padding:20px 20px 10px;
 }
-.contact ul{
+.about li{
 text-decoration: none;
 color: $color-txt-white;
-padding: 2px;
+margin-top:5px;
+}
+.about ul{
+margin: 0;
+padding: 15px 20px;
+}
+.about a{
+list-style: none;
+}
+.about i{
+padding-right: 8px;
 }
