@@ -206,6 +206,8 @@ h1 .title {
 
 .card-rest {
   position: relative;
+  -webkit-box-shadow: 4px 4px 8px rgba(107, 107, 107, 0.322);
+          box-shadow: 4px 4px 8px rgba(107, 107, 107, 0.322);
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,16 +275,29 @@ footer {
 }
 
 .contact h3 {
-  border: 1px solid red;
   color: #ffff;
   font-family: "Shrikhand", cursive;
-  font-size: 25px;
-  margin: 15px;
+  font-size: 20px;
+  margin: 0;
+  padding: 20px 20px 10px;
 }
 
-.contact ul {
+.about li {
   text-decoration: none;
   color: #ffff;
-  padding: 2px;
+  margin-top: 5px;
+}
+
+.about ul {
+  margin: 0;
+  padding: 15px 20px;
+}
+
+.about a {
+  list-style: none;
+}
+
+.about i {
+  padding-right: 8px;
 }
 /*# sourceMappingURL=style.css.map */
