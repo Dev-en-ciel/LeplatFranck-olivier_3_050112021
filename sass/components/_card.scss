@@ -7,62 +7,88 @@
   align-items: center;
   padding: 20px;
   background-color: #f6f6f6;
-}
-.browse-restaurants h2 {
+  & h2 {
   width: 100%;
-  font-size: 25px;
-  font-family: $text;
-  margin: 20px 20px 0;
-  align-items: center;
-}
-.restaurant-card {
-  justify-content: center;
-  border-radius: 20px 20px 0px 0px;
-  width: 400px;
-  margin: 20px 50px 30px;
-}
-.restaurant-card img {
-  object-fit: cover;
-  width: 100%;
-  height: 185px;
-  border-radius: 20px 20px 0px 0px;
-}
-.new {
-position: relative;
-  // width: 60px;
-  margin: 15px;
-  top: 40px;
-  left: 135px;
-  padding: 8px;
-  background-color: $color-tertiary;
-}
+    font-size: 25px;
+    font-family: $text;
+    margin: 20px 20px;
+  }
+  @media screen and (max-width: 520px) {
+    & h2 {
+align-items: flex-start;
+// margin: 10px;
 
-.card-rest {
-  position: relative;
-  box-shadow: 4px 4px 8px rgba(107, 107, 107, 0.322);
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  color: black;
-  font-family: $text;
-  // margin: -40px 0;
-  border-radius: 0px 0px 20px 20px;
-}
+    }
+  }
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 435px;
+    border-radius: 20px 20px 0px 0px;
+    margin: 10px 15px;
+    & img {
+      object-fit: cover;
+      width: 100%;
+      height: 165px;
+      border-radius: 20px 20px 0px 0px;
+    }
+    & a {
+      color: transparent;
+      position: relative;
+      bottom: 240px;
+      width: 100%;
+      height: 75%;
+    }
+    &__new {
+      position: absolute;
+      background-color: $color-tertiary;
+      color: #008766;
+      font-family: $text;
+      right: 20px;
+      top: 15px;
+      padding: 6px 11px;
+      border-radius: 3px;
+    }
+    &__info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      color: black;
+      font-family: $text;
+      position: relative;
+      border-radius: 0px 0px 20px 20px;
+      box-shadow: 4px 4px 8px rgba(107, 107, 107, 0.322);
+      background-color: rgb(255, 255, 255);
+    }
+    &__info h3,
+    p {
+      margin: 2px 20px;
+    }
+    &__info h3 {
+      margin-top: 10px;
+    }
+    &__info p {
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 520px) {
+      margin: 0 5px;
+    }
+  }
 
-.card-rest h3,
-p {
-  margin: 2px 20px;
-}
-.card-rest h3 {
-  margin-top: 10px;
-}
-.card-rest p {
-  margin-bottom: 20px;
-}
-.heart {
-  position: absolute;
-  font-size: 20px;
-  right: 30px;
-  bottom: 20px;
+  .heart {
+    position: absolute;
+    font-size: 30px;
+    right: 30px;
+    bottom: 20px;
+  }
 }
