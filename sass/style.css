@@ -162,7 +162,10 @@ h1 .title {
 }
 
 .choice__btn {
-  margin: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 35px;
   padding-bottom: 50px;
 }
 
@@ -173,19 +176,26 @@ h1 .title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
   list-style: none;
   counter-reset: step;
   padding: 0;
+  margin: 0;
 }
 
 li::before {
   position: relative;
   right: 40px;
-  border: 1px solid;
   padding: 4px 9px;
   border-radius: 50%;
   color: #fafafa;
@@ -193,6 +203,7 @@ li::before {
 }
 
 .choice__btn li {
+  width: 390px;
   counter-increment: step;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -264,43 +275,77 @@ li::before {
   width: 100%;
   font-size: 25px;
   font-family: "Roboto", sans-serif;
-  margin: 20px 20px 0;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin: 20px 20px;
 }
 
-.restaurant-card {
+@media screen and (max-width: 520px) {
+  .browse-restaurants h2 {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.browse-restaurants article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 20px 20px 0px 0px;
-  width: 400px;
-  margin: 20px 50px 30px;
+  width: 90%;
 }
 
-.restaurant-card img {
+.browse-restaurants .card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 435px;
+  border-radius: 20px 20px 0px 0px;
+  margin: 10px 15px;
+}
+
+.browse-restaurants .card img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 185px;
+  height: 165px;
   border-radius: 20px 20px 0px 0px;
 }
 
-.new {
+.browse-restaurants .card a {
+  color: transparent;
   position: relative;
-  margin: 15px;
-  top: 40px;
-  left: 135px;
-  padding: 8px;
-  background-color: #99e2d0;
+  bottom: 240px;
+  width: 100%;
+  height: 75%;
 }
 
-.card-rest {
-  position: relative;
-  -webkit-box-shadow: 4px 4px 8px rgba(107, 107, 107, 0.322);
-          box-shadow: 4px 4px 8px rgba(107, 107, 107, 0.322);
-  background-color: white;
+.browse-restaurants .card__new {
+  position: absolute;
+  background-color: #99e2d0;
+  color: #008766;
+  font-family: "Roboto", sans-serif;
+  right: 20px;
+  top: 15px;
+  padding: 6px 11px;
+  border-radius: 3px;
+}
+
+.browse-restaurants .card__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,27 +356,38 @@ li::before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
   color: black;
   font-family: "Roboto", sans-serif;
+  position: relative;
   border-radius: 0px 0px 20px 20px;
+  -webkit-box-shadow: 4px 4px 8px rgba(107, 107, 107, 0.322);
+          box-shadow: 4px 4px 8px rgba(107, 107, 107, 0.322);
+  background-color: white;
 }
 
-.card-rest h3,
-p {
+.browse-restaurants .card__info h3,
+.browse-restaurants .card p {
   margin: 2px 20px;
 }
 
-.card-rest h3 {
+.browse-restaurants .card__info h3 {
   margin-top: 10px;
 }
 
-.card-rest p {
+.browse-restaurants .card__info p {
   margin-bottom: 20px;
 }
 
-.heart {
+@media screen and (max-width: 520px) {
+  .browse-restaurants .card {
+    margin: 0 5px;
+  }
+}
+
+.browse-restaurants .heart {
   position: absolute;
-  font-size: 20px;
+  font-size: 30px;
   right: 30px;
   bottom: 20px;
 }
