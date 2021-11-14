@@ -4,7 +4,7 @@ h1 {
   width: 100%;
   text-align: center;
   .title {
-    padding: 15px;
+    padding: 20px;
     width: 200px;
   }
 }
@@ -15,10 +15,15 @@ h1 {
   &__location {
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 11px;
     background-color: $color-light-gray;
     box-shadow: 0px 4px 4px inset #c0c0c0c0;
     font-size: 18px;
+  }
+  &__cities {
+    border: none;
+    padding: 10px;
+    background-color: transparent;
   }
   &__location i {
     padding: 0 15px;
@@ -29,6 +34,12 @@ h1 {
     font-weight: 500;
     margin: 0;
   }
+}
+::placeholder {
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: $text;
 }
 // part title and slogan
 .home__slogan {
@@ -68,21 +79,23 @@ h1 {
   }
 }
 // fin du header de la page d'acceuil
-.page-one {
+
+// debut du header des pages restaurants
+
+.header-restaurant {
   display: flex;
   flex-direction: column;
+  &__return {
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    color: black;
+    font-size: 30px;
+  }
 }
-.return {
-  position: relative;
-  top: 45px;
-  left: 40px;
-  font-size: 20px;
-  color: black;
-}
-.pict-note img {
+
+.picture-rest img {
   width: 100%;
   height: 300px;
   object-fit: cover;
 }
-
-  
