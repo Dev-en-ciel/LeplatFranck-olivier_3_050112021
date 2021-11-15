@@ -479,6 +479,14 @@ footer {
   background-color: #353535;
 }
 
+.contact h2 {
+  color: #ffff;
+  font-family: "Shrikhand", cursive;
+  font-size: 20px;
+  margin: 0;
+  padding: 20px 20px 10px;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -493,30 +501,28 @@ footer {
   width: 100%;
 }
 
-.contact h3 {
-  color: #ffff;
-  font-family: "Shrikhand", cursive;
-  font-size: 20px;
+.about ul {
   margin: 0;
-  padding: 20px 20px 10px;
+  padding: 10px 20px;
 }
 
 .about li {
   text-decoration: none;
-  color: #ffff;
   margin-top: 5px;
-}
-
-.about ul {
-  margin: 0;
-  padding: 15px 20px;
+  list-style: none;
 }
 
 .about a {
-  list-style: none;
+  font-family: "Roboto", sans-serif;
+  color: #ffff;
 }
 
 .about i {
   padding-right: 8px;
+}
+
+.about li .two {
+  width: 15px;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
