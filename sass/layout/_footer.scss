@@ -1,33 +1,37 @@
 // footer
-footer{
-background-color:$color-black;
-
+footer {
+  background-color: $color-black;
 }
-.about{
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-width:100%;
+.contact h2 {
+  color: $color-txt-white;
+  font-family: $title;
+  font-size: 20px;
+  margin: 0;
+  padding: 20px 20px 10px;
 }
-.contact h3{
-color: $color-txt-white;
-font-family: $title;
-font-size: 20px;
-margin: 0;
-padding:20px 20px 10px;
-}
-.about li{
-text-decoration: none;
-color: $color-txt-white;
-margin-top:5px;
-}
-.about ul{
-margin: 0;
-padding: 15px 20px;
-}
-.about a{
-list-style: none;
-}
-.about i{
-padding-right: 8px;
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  & ul {
+    margin: 0;
+    padding: 10px 20px;
+  }
+  & li {
+    text-decoration: none;
+    margin-top: 5px;
+    list-style: none;
+  }
+  & a {
+    font-family: $text;
+    color: $color-txt-white;
+  }
+  & i {
+    padding-right: 8px;
+  }
+  & li .two{
+  width: 15px;
+  font-size: 14px;
+  }
 }
