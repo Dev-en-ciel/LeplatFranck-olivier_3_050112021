@@ -3,7 +3,7 @@ h1 {
   margin: 0;
   width: 100%;
   text-align: center;
-  .title {
+  & img {
     padding: 20px;
     width: 200px;
   }
@@ -81,20 +81,14 @@ h1 {
 // fin du header de la page d'acceuil
 
 // debut du header des pages restaurants
-
-.header-restaurant {
-  display: flex;
-  flex-direction: column;
-  &__return {
+.return {
     position: absolute;
     left: 30px;
     top: 20px;
     color: black;
     font-size: 30px;
   }
-}
-
-.picture-rest img {
+.ban img {
   width: 100%;
   height: 300px;
   object-fit: cover;
