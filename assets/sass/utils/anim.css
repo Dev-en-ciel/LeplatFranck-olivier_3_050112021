@@ -1,0 +1,15 @@
+@-webkit-keyframes heart {
+  from {
+    background-color: transparent;
+  }
+  to {
+  }
+}
+@keyframes heart {
+  from {
+    background-color: transparent;
+  }
+  to {
+  }
+}
+/*# sourceMappingURL=anim.css.map */
