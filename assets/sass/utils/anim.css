@@ -1,15 +1,69 @@
-@-webkit-keyframes heart {
-  from {
-    background-color: transparent;
-  }
-  to {
-  }
+/* loader */
+.loader{
+width: 100px;
+height: 100px;
+position: relative;
 }
+.loader div{
+box-sizing: border-box;
+position: absolute;
+width: 100%;
+height: 100%;
+border: 8px solid transparent;
+border-top-color: #9356dc;
+border-radius: 50%;
+animation: loaderOne 1.3s linear infinite;
+}
+.loader div:nth-child(2){
+border: 8px solid transparent;
+border-bottom-color: #ff79da;
+animation: loaderOne 1.2s linear infinite;
+}
+
+@keyframes loaderOne{
+  0%{ transform: rotate(0deg); border-width: 10px;}
+  50%{ transform: rotate(180deg); border-width: 1px;}
+  100%{ transform: rotate(360deg); border-width: 10px;}
+}
+.loaderTwo{
+width: 80px;
+height: 80px;
+position: relative;
+bottom: 90px;
+left: 10px;
+}
+.loaderTwo div{
+box-sizing: border-box;
+position: absolute;
+width: 100%;
+height: 100%;
+border: 8px solid transparent;
+border-right-color: #9356dc;
+border-radius: 50%;
+animation: loaderTwo 1.2s linear infinite;
+}
+.loaderTwo div:nth-child(2){
+border: 8px solid transparent;
+border-left-color: #ff79da;
+animation: loaderTwo 1.2s linear infinite;
+}
+@keyframes loaderTwo{
+  0%{ transform: rotate(380deg); border-width: 10px;}
+  50%{ transform: rotate(180deg); border-width: 1px;}
+  100%{ transform: rotate(0deg); border-width: 10px;}
+}
+/* animation for button */
+
+
 @keyframes heart {
-  from {
-    background-color: transparent;
+  0% {
+    color: transparent;
   }
-  to {
+  50% {
+    color: #9356dc;
+  }
+  100% {
+    color:#ff79da;
   }
 }
 /*# sourceMappingURL=anim.css.map */
