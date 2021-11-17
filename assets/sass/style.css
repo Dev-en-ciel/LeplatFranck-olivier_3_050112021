@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
-@import url(c:\wamp64\www\oc\p3\ohmyfood\assets\sass\utils\anim.css);
 h1 {
   margin: 0;
   width: 100%;
@@ -111,29 +110,28 @@ h1 img {
   padding: 0px 15px 20px 15px;
 }
 
-.btn a {
+.btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
   background: linear-gradient(#ff79da, #9356dc);
   -webkit-box-shadow: 4px 4px 8px #e9e9e9;
           box-shadow: 4px 4px 8px #e9e9e9;
+  margin-top: 10px;
   padding: 15px;
-  width: 100%;
+  width: 190px;
+  text-align: center;
   border-radius: 30px;
-  border: 2px solid;
   color: #ffff;
 }
 
-a:before {
-  content: "";
-  border: 2px solid transparent;
-  position: absolute;
-  top: -2px;
-  left: -2px;
+.btn a {
+  padding: auto;
+  color: #f6f6f6;
 }
 
-a:hover::before {
-  -webkit-animation: border 1s linear forwards;
-          animation: border 1s linear forwards;
+.btn:hover {
+  -webkit-box-shadow: -5px 4px 12px #9356dc;
+          box-shadow: -5px 4px 12px #9356dc;
+  border: 1px solid linear-gradient(#ff79da, #9356dc);
 }
 
 .return {
@@ -251,12 +249,12 @@ li::before {
       -ms-grid-row-align: center;
       align-self: center;
   margin: 30px 0;
+  background-color: green;
   padding: 20px;
   border-radius: 30px;
   width: 200px;
   text-align: center;
   font-size: 20px;
-  background-color: #9356dc;
 }
 
 .order a {
@@ -343,7 +341,7 @@ li::before {
   position: relative;
   bottom: 240px;
   width: 100%;
-  height: 90%;
+  height: 93%;
 }
 
 .browse-restaurants .card__new {
@@ -399,14 +397,27 @@ li::before {
 
 .browse-restaurants .heart {
   position: absolute;
-  font-size: 30px;
+  font-size: 25px;
   right: 30px;
-  bottom: 20px;
+  bottom: 30px;
+  cursor: pointer;
+  z-index: 10;
 }
 
-.heart:hover {
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+.browse-restaurants .heart2 {
+  position: absolute;
+  font-size: 27px;
+  right: 29px;
+  bottom: 29px;
+  cursor: pointer;
+  z-index: 10;
+  color: transparent;
+}
+
+.browse-restaurants .heart:hover,
+.browse-restaurants .heart2:hover {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-name: heart;
           animation-name: heart;
 }
@@ -516,7 +527,7 @@ main {
 
 .menu p {
   margin: 0 10px;
-  padding: 5px;
+  padding: 8px 5px;
 }
 
 .menu__check {
@@ -534,7 +545,6 @@ main {
   bottom: 52px;
   left: 320px;
   width: 20px;
-  background-color: #99e2d0;
   color: white;
   border-radius: 0px 10px 10px 0px;
   opacity: 0.4;
@@ -547,6 +557,11 @@ main {
           transition-timing-function: ease-in-out;
   opacity: 1;
   width: 50px;
+}
+
+.price {
+  position: relative;
+  right: 15px;
 }
 
 body {

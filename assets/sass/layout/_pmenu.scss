@@ -66,9 +66,10 @@ main {
     justify-content: space-between;
     align-items: center;
   }
+  
   & p {
     margin:0 10px;
-    padding: 5px;
+    padding:8px 5px;
   }
   &__check {
     display: flex;
@@ -79,7 +80,6 @@ main {
     bottom: 52px;
     left: 320px;
     width: 20px;
-    background-color: $color-tertiary;
     color: white;
     border-radius: 0px 10px 10px 0px;
     opacity: 0.4;
@@ -91,3 +91,7 @@ main {
   width: 50px;
   }
 }
+  .price{
+   position: relative;
+   right: 15px;
+   }
