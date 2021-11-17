@@ -45,7 +45,7 @@
       position: relative;
       bottom: 240px;
       width: 100%;
-      height: 90%;
+      height: 93%;
     }
     &__new {
       position: absolute;
@@ -84,14 +84,27 @@
     }
   }
 
-  .heart {
+  .heart{
     position: absolute;
-    font-size: 30px;
+    font-size: 25px;
     right: 30px;
-    bottom: 20px;
+    bottom: 30px;
+    cursor: pointer;
+    z-index: 10;
   }
+  .heart2{
+    position: absolute;
+    font-size: 27px;
+    right: 29px;
+    bottom: 29px;
+    cursor: pointer;
+    z-index: 10;
+color: transparent;  
+  }
+  
+.heart:hover,
+.heart2:hover {
+  animation-duration: 3s;
+  animation-name: heart;
 }
-  .heart:hover {
-    animation-duration: 4s;
-    animation-name: heart;
-  }
+}
