@@ -1,7 +1,10 @@
 // police
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+// loader
+@import "../sass/utils/anim.css";
 // variables
-@import "./utils/_variables";
+@import "./base/_variables";
+@import "./base/_mixin";
 // style header
 @import "./layout/_header";
 // style pour les boutons  
@@ -14,9 +17,6 @@
 @import "./layout/_general";
 // style footer
 @import "./layout/_footer";
-// // animations
-// @import "./utils/anim.css"
-
 
 
 
