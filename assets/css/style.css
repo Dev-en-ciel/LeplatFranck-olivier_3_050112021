@@ -19,7 +19,7 @@ h1 img {
   justify-content: center;
   padding: 11px;
   background-color: #eaeaea;
-  box-shadow: 4px 4px 8px #e9e9e9;
+  box-shadow: 4px 4px 12px #bfbfbf;
   font-size: 18px;
 }
 .home__cities {
@@ -68,7 +68,7 @@ h1 img {
 
 .btn {
   background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 4px 4px 8px #e9e9e9;
+  box-shadow: 4px 4px 12px #bfbfbf;
   margin-top: 10px;
   padding: 15px;
   width: 190px;
@@ -178,9 +178,10 @@ li::before {
 .order {
   align-self: center;
   margin: 30px 0;
-  background-color: green;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   padding: 20px;
   border-radius: 30px;
+  box-shadow: 4px 4px 12px #bfbfbf;
   width: 200px;
   text-align: center;
   font-size: 20px;
@@ -188,6 +189,11 @@ li::before {
 .order a {
   color: #ffff;
   font-family: "Roboto", sans-serif;
+}
+
+.order:hover {
+  opacity: 0.7;
+  box-shadow: -5px 4px 12px #9356dc;
 }
 
 .browse-restaurants {
@@ -282,122 +288,148 @@ li::before {
   right: 30px;
   bottom: 30px;
   cursor: pointer;
-  z-index: 10;
+  z-index: 5;
+  opacity: 1;
 }
-.browse-restaurants .heart2 {
-  position: absolute;
-  font-size: 27px;
-  right: 29px;
-  bottom: 29px;
-  cursor: pointer;
-  z-index: 10;
+.browse-restaurants i:hover {
   color: transparent;
-}
-.browse-restaurants .heart:hover,
-.browse-restaurants .heart2:hover {
-  animation-duration: 3s;
-  animation-name: heart;
+  font-weight: 600;
 }
 
 main {
   background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
 }
 
-.restaurant {
+/* contenue de la page */
+.bloc-menu {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -50px;
-  border-radius: 30px;
-  background-color: #f6f6f6;
-  font-family: "Roboto", sans-serif;
+  bottom: 35px;
 }
 
-.name {
+/* titre et icon */
+.restaurant-name {
+  position: relative;
+  bottom: 40px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
-  font-size: 19px;
+  border-radius: 50px 50px 0px 0px;
+  padding-top: 10px;
   font-family: "Shrikhand", cursive;
-  margin: 0 25px;
+  background-color: #f6f6f6;
+  width: 100%;
 }
-.name i {
+.restaurant-name h2,
+.restaurant-name i {
+  display: flex;
+  white-space: nowrap;
+  margin: 0 20px;
+  padding: 10px;
   font-size: 25px;
+}
+.restaurant-name i {
+  color: #9356dc;
+}
+
+/* titre des menu */
+/* carte de menu */
+.menu-card {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  /* bloc menu entree */
+}
+.menu-card h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 3px solid #99e2d0;
+  width: 13%;
+}
+.menu-card__One, .menu-card__Two, .menu-card__Three {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 380px;
+  margin: 10px;
 }
 
 .menu {
+  box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: #f6f6f6;
-}
-.menu h3 {
   width: 100%;
-  margin-bottom: 30px;
+  box-shadow: 4px 4px 12px #bfbfbf;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.menu h4,
+.menu p {
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-.menu h3::after {
-  content: "";
-  width: 45px;
-  height: 3px;
-  background-color: #99e2d0;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  position: relative;
-}
-.menu__choice {
-  display: flex;
-  flex-direction: column;
-  width: 340px;
-  margin: -15px 0;
-  border-radius: 10px;
-  box-shadow: 4px 4px 8px;
-}
-.menu h4 {
-  width: 100%;
-  margin: 0px 15px;
-  padding-top: 10px;
-}
-.menu__info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 10px;
 }
 .menu p {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  width: 270px;
-  font-size: 14px;
-  margin: 0 10px;
-  padding: 8px 5px;
+  padding-top: 8px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.menu__choice {
+  width: 280px;
+}
+.menu__price {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  left: 15px;
+  padding: 8px 15px;
+  margin-left: auto;
 }
 .menu__check {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  height: 66px;
-  bottom: 52px;
-  left: 320px;
-  width: 20px;
-  color: white;
-  border-radius: 0px 10px 10px 0px;
-  opacity: 0.4;
-  transition: width 1s;
+  border-radius: 0px 15px 15px 0px;
+  animation-name: check;
+  opacity: 0;
 }
-.menu__check:hover {
-  transition-timing-function: ease-in-out;
-  opacity: 1;
-  width: 50px;
+.menu__check i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  font-size: 18px;
+  color: white;
 }
 
-.price {
-  position: relative;
-  right: 15px;
+/* btn commander */
+.order {
+  align-self: center;
+  margin-top: 20px;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 12px #bfbfbf;
+  width: 200px;
+  text-align: center;
+  font-size: 20px;
+}
+.order:hover {
+  opacity: 0.7;
+  box-shadow: -5px 4px 12px #9356dc;
 }
 
 body {

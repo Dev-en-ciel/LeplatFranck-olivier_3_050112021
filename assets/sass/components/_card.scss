@@ -79,32 +79,24 @@
     &__info p {
       margin-bottom: 20px;
     }
+
     @media screen and (max-width: 520px) {
       margin: 0 5px;
     }
   }
 
-  .heart{
+  .heart {
     position: absolute;
     font-size: 25px;
     right: 30px;
     bottom: 30px;
     cursor: pointer;
-    z-index: 10;
+    z-index: 5;
+    
+    opacity: 1;
   }
-  .heart2{
-    position: absolute;
-    font-size: 27px;
-    right: 29px;
-    bottom: 29px;
-    cursor: pointer;
-    z-index: 10;
-color: transparent;  
+    & i:hover{
+    color: transparent;
+    font-weight: 600;
   }
-  
-.heart:hover,
-.heart2:hover {
-  animation-duration: 3s;
-  animation-name: heart;
-}
 }
