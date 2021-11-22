@@ -32,10 +32,18 @@ main {
     padding: 10px;
     font-size: 25px;
   }
-  & i {
-    color: #9356dc;
+  & i:hover {
+    color: transparent;
+    font-weight: 600;
   }
 }
+.heart {
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 5;
+    opacity: 1;
+  }
+ 
 /* titre des menu */
 /* carte de menu */
 .menu-card {

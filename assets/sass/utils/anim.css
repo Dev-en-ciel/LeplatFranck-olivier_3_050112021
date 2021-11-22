@@ -30,7 +30,7 @@
             transform: translateX(-100px);
   }
 }
-.menu-card__One {
+.menu-card__One, .menu-card__Two, .menu-card__Three{
   animation: menu 4s;
 }
 @keyframes menu {
@@ -42,30 +42,7 @@
     opacity: 1;
   }
 }
-  .menu-card__Two{
-  animation: menu 4s;
-}
-@keyframes menu {
-  from {
-   opacity:0;
-  }
 
-  to {
-    opacity:1;
-  }
-}
-.menu-card__Three{
-animation: menu 4s ;
-}
-@keyframes menu {
-  from {
-  opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  } 
-}
 /* animation for button */
 .btn:hover {
   opacity: 0.8;
@@ -75,21 +52,22 @@ animation: menu 4s ;
   animation: both 1.2s;
 }
 /*  animation for heart */
-.browse-restaurants i {
+.heart:hover {
   animation: heart 2s ease-in;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   -webkit-background-clip: text;
-  animation: fill 200ms ease-in-out;
+  transition: 1s;
 }
 @keyframes heart {
   0% {
+  transform: rotate(0deg);
     opacity: 0;
   }
   50% {
-  color: transparent;
     opacity: 0.5;
   }
   100% {
+transform: rotate(360deg);
     opacity: 1;
   }
 }

@@ -331,8 +331,16 @@ main {
   padding: 10px;
   font-size: 25px;
 }
-.restaurant-name i {
-  color: #9356dc;
+.restaurant-name i:hover {
+  color: transparent;
+  font-weight: 600;
+}
+
+.heart {
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 5;
+  opacity: 1;
 }
 
 /* titre des menu */
