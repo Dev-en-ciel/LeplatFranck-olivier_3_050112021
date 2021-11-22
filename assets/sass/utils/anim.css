@@ -7,56 +7,64 @@
 
 /* fin animation loader */
 
-/* debut animation btn menu */
-.restaurant-name {
+/* .restaurant-name .far {
   animation: return 3s ease-in 1 reverse both;
 }
 @keyframes return {
   from {
-    transform: scale(1);
+    transform: rotate(1);
   }
   to {
-    transform: scale(5);
+    transform: rotate(5);
+  }
+} */
+
+
+@keyframes check {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
   }
 }
-
 .menu-card__One {
-  animation: menu 1s ease-in-out 1 normal both;
+  animation: menu 4s;
 }
 @keyframes menu {
   from {
-   transform: scale(0);
+    opacity: 0;
   }
 
   to {
-    transform: scale(1);
+    opacity: 1;
   }
 }
   .menu-card__Two{
-  animation: menu 1s ease-in-out 1 normal both;
-  animation-delay: 1s;
+  animation: menu 4s;
 }
 @keyframes menu {
   from {
-   transform: scale(0);
+   opacity:0;
   }
 
   to {
-    transform: scale(1);
+    opacity:1;
   }
 }
 .menu-card__Three{
-animation: menu 1s ease-in-out 1 normal both;
-animation-delay: 2s;
+animation: menu 4s ;
 }
 @keyframes menu {
   from {
-   transform: scale(0);
+  opacity: 0;
   }
 
   to {
-    transform: scale(1);
-  }
+    opacity: 1;
+  } 
 }
 /* animation for button */
 .btn:hover {
@@ -71,13 +79,14 @@ animation-delay: 2s;
   animation: heart 2s ease-in;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
   -webkit-background-clip: text;
-  animation: fill 600ms ease-in-out;
+  animation: fill 200ms ease-in-out;
 }
 @keyframes heart {
   0% {
     opacity: 0;
   }
   50% {
+  color: transparent;
     opacity: 0.5;
   }
   100% {
