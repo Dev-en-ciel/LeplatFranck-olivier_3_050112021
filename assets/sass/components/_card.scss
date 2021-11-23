@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  padding: 0px;
   background-color: #f6f6f6;
   & h2 {
     width: 100%;
@@ -16,13 +16,13 @@
   @media screen and (max-width: 520px) {
     & h2 {
       align-items: flex-start;
-      // margin: 10px;
     }
   }
   article {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-evenly;
     width: 90%;
   }
   .card {
@@ -31,10 +31,11 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 435px;
+    width: 490px;
     border-radius: 20px 20px 0px 0px;
-    margin: 10px 15px;
+    margin: 10px 0px;
     & img {
+    display: flex;
       object-fit: cover;
       width: 100%;
       height: 165px;
@@ -80,22 +81,24 @@
       margin-bottom: 20px;
     }
 
-    @media screen and (max-width: 520px) {
-      margin: 0 5px;
+    @media screen and (max-width: 960px) {
+      .card {
+        width: 460px;
+      }
     }
-  }
 
-  .heart {
-    position: absolute;
-    font-size: 25px;
-    right: 30px;
-    bottom: 30px;
-    cursor: pointer;
-    z-index: 5;
-    opacity: 1;
-  }
-    & i:hover{
-    color: transparent;
-    font-weight: 600;
+    .heart {
+      position: absolute;
+      font-size: 25px;
+      right: 30px;
+      bottom: 30px;
+      cursor: pointer;
+      z-index: 5;
+      opacity: 1;
+    }
+    & i:hover {
+      color: transparent;
+      font-weight: 600;
+    }
   }
 }
