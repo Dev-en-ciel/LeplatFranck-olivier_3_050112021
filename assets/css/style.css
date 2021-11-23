@@ -243,7 +243,7 @@ li::before {
   position: relative;
   bottom: 240px;
   width: 100%;
-  height: 93%;
+  height: 65%;
 }
 .browse-restaurants .card__new {
   position: absolute;
@@ -412,15 +412,15 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
   width: auto;
   border-radius: 0px 15px 15px 0px;
-  color: white;
 }
 .menu__check i {
   display: flex;
   justify-content: center;
-  color: #f2f2f2;
   align-items: center;
+  color: #f2f2f2;
   width: 100%;
   margin: 0;
   font-size: 18px;
@@ -431,7 +431,7 @@ main {
   align-self: center;
   margin-top: 20px;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  padding: 15px;
+  padding: 20px;
   border-radius: 30px;
   box-shadow: 4px 4px 12px #bfbfbf;
   width: 200px;
@@ -459,24 +459,26 @@ footer {
 }
 
 .contact h2 {
+  text-align: center;
   color: #ffff;
   font-family: "Shrikhand", cursive;
-  font-size: 20px;
+  font-size: 25px;
   margin: 0;
   padding: 20px 20px 10px;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-}
 .about ul {
-  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 20px;
   padding: 10px 20px;
 }
 .about li {
+  display: flex;
+  width: 220px;
   text-decoration: none;
   margin-top: 5px;
   list-style: none;
@@ -491,6 +493,18 @@ footer {
 .about li .two {
   width: 15px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 960px) {
+  .contact h2 {
+    font-size: 20px;
+    text-align: start;
+  }
+
+  .about ul {
+    flex-direction: column;
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
