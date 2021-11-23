@@ -38,12 +38,12 @@ main {
   }
 }
 .heart {
-    font-size: 25px;
-    cursor: pointer;
-    z-index: 5;
-    opacity: 1;
-  }
- 
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 5;
+  opacity: 1;
+}
+
 /* titre des menu */
 /* carte de menu */
 .menu-card {
@@ -81,50 +81,49 @@ main {
   box-shadow: $shadow;
   border-radius: 15px;
   margin-bottom: 20px;
+  &__choice {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
   & h4,
   p {
+    width: auto;
     font-family: $text;
     font-size: 16px;
+    margin: 15px;
     overflow: hidden;
-    text-overflow: ellipsis;
     white-space: nowrap;
-    margin: 10px;
+    text-overflow: ellipsis;
   }
   & p {
     padding-top: 8px;
     font-size: 13px;
     font-weight: 400;
   }
-  &__choice {
-    width: 280px;
-  }
   &__price {
     display: flex;
     align-items: flex-end;
-    position: relative;
-
     left: 15px;
-    padding: 8px 15px;
-    margin-left: auto;
+    padding: 8px 20px;
+    margin-left: 20px;
   }
   &__check {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: auto;
     border-radius: 0px 15px 15px 0px;
-    opacity: 0;
-    &:hover{
-    	-webkit-animation: check 2s ease-in both;
-	        animation: check 2s ease-in both;
-    }
+color: white;
     & i {
       display: flex;
       justify-content: center;
+color: #f2f2f2;
       align-items: center;
       width: 100%;
       margin: 0;
       font-size: 18px;
-      color: white;
     }
   }
 }
