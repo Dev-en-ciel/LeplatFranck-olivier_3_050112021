@@ -113,14 +113,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
     width: auto;
     border-radius: 0px 15px 15px 0px;
-color: white;
     & i {
       display: flex;
       justify-content: center;
-color: #f2f2f2;
       align-items: center;
+      color: #f2f2f2;
       width: 100%;
       margin: 0;
       font-size: 18px;
@@ -132,7 +132,7 @@ color: #f2f2f2;
   align-self: center;
   margin-top: 20px;
   background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  padding: 15px;
+  padding: 20px;
   border-radius: 30px;
   box-shadow: $shadow;
   width: 200px;
