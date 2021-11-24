@@ -1,17 +1,16 @@
 /* debut partie loader */
-.loader {
-  display: flex;
-  flex-direction: row;
+ .loader {
+  animation: loader 8s 3s; 
   position: relative;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   position: fixed;
-  inset: 0px;
   z-index: 10;
+  display: flex;
+  inset: 0;
   background: linear-gradient(to bottom, rgb(146, 86, 220), rgb(191, 243, 230), rgb(255, 121, 217));
-  animation: loader 8s 3s;
-}
-@keyframes loader {
+} 
+/* @keyframes loader {
   0% {
     opacity: 1;
   }
@@ -20,10 +19,10 @@
   }
   100% {
     opacity: 0;
-    top: 800px;
+
   }
-}
-.letter {
+} */
+/* .letter {
   position: fixed;
   top: 350px;
   font-family: "Shrikhand", cursive;
@@ -46,7 +45,7 @@
     transform: scale(1);
     opacity: 1;
   }
-}
+} */
 
 
 .menu-card__One,
@@ -99,21 +98,30 @@
   background-color: #99e2d0;
   width: 150px;
   transition-duration: 1s;
+  animation: check 0.8s ease-in-out reverse;
 }
-.menu_choice:hover i {
-  transform: rotate(360deg);
-  animation: check 1.2s reverse;
-  transition-duration: 0.8s;
+.menu:hover .menu__check i{
+  transition-duration: 1.5s;
+  animation: valid-check 0.8s ease-in ;
+  
 }
 
 @keyframes check {
   0% {
-    opacity: 0;
-    transform: translateX(-20%);
+  width: 150px;
   }
   100% {
-    opacity: 1;
-    transform: translateX(0%);
+    width: 20px;
+  }
+}
+@keyframes valid-check {
+  from{ 
+  opacity: 0.5;
+  transform: rotate(0deg);
+  }
+  to{ 
+  opacity: 1;
+  transform: rotate(-360deg);
   }
 }
 /*# sourceMappingURL=anim.css.map */
