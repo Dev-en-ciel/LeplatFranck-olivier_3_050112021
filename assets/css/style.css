@@ -48,17 +48,18 @@ h1 img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Roboto", sans-serif;
   padding-bottom: 50px;
   background-color: #f6f6f6;
 }
 .home__slogan h2 {
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   text-align: center;
-  font-size: 30px;
   padding: 20px 10px;
 }
 .home__slogan p {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   text-align: center;
   font-size: 20px;
@@ -67,14 +68,13 @@ h1 img {
 }
 
 .btn {
-  background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 4px 4px 12px #bfbfbf;
+  width: 190px;
   margin-top: 10px;
   padding: 15px;
-  width: 190px;
-  text-align: center;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 30px;
-  color: #ffff;
+  box-shadow: 4px 4px 12px #bfbfbf;
+  text-align: center;
 }
 .btn a {
   padding: auto;
@@ -85,7 +85,7 @@ h1 img {
   opacity: 0.7;
   box-shadow: -5px 4px 12px #9356dc;
   border-color: transparent;
-  border-color: 2px solid #ff79da;
+  border-color: 2px solid linear-gradient(#fd8fde, #a777e2);
 }
 
 .return {
@@ -103,7 +103,7 @@ h1 img {
 }
 
 .choice h2 {
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Roboto", sans-serif;
   margin: 20px;
 }
@@ -159,12 +159,12 @@ li::before {
 
 .choice__btn li i {
   margin: 0px 20px 0px -5px;
-  color: #f5edff7a;
+  color: rgba(5, 5, 5, 0.42);
   font-size: 19px;
 }
 
 .choice__btn ol li:hover {
-  background-color: #ff79d927;
+  background-color: rgba(255, 121, 217, 0.153);
   transition: ease-in 0.5s;
 }
 .choice__btn ol li:hover i {
@@ -178,13 +178,13 @@ li::before {
 .order {
   align-self: center;
   margin: 30px 0;
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   padding: 20px;
+  width: 200px;
+  font-size: 20px;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
   border-radius: 30px;
   box-shadow: 4px 4px 12px #bfbfbf;
-  width: 200px;
   text-align: center;
-  font-size: 20px;
 }
 .order a {
   color: #ffff;
@@ -194,6 +194,8 @@ li::before {
 .order:hover {
   opacity: 0.7;
   box-shadow: -5px 4px 12px #9356dc;
+  border-color: transparent;
+  border-color: 2px solid linear-gradient(#fd8fde, #a777e2);
 }
 
 .browse-restaurants {
@@ -393,7 +395,7 @@ main {
   width: auto;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  margin: 15px;
+  margin: 10px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -426,23 +428,6 @@ main {
   width: 100%;
   margin: 0;
   font-size: 18px;
-}
-
-/* btn commander */
-.order {
-  align-self: center;
-  margin-top: 20px;
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  padding: 20px;
-  border-radius: 30px;
-  box-shadow: 4px 4px 12px #bfbfbf;
-  width: 200px;
-  text-align: center;
-  font-size: 20px;
-}
-.order:hover {
-  opacity: 0.7;
-  box-shadow: -5px 4px 12px #9356dc;
 }
 
 body {

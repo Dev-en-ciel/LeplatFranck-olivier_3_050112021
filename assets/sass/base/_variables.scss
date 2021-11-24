@@ -1,12 +1,12 @@
-// variables mixin fonctions %placeholder
+// variables
 
 // color
 $color-primary: #9356dc;
 $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 // color header
-
 $color-font-location:#eaeaea;
+$color-title: black;
 // color background
 $color-background:#f6f6f6;
 // color footer
@@ -14,11 +14,11 @@ $color-black:#353535;
 $color-text:#ffff;
 // style for buttom
 $shadow:4px 4px 12px #bfbfbf;
-$color-hover:linear-gradient(#fd8fde, #a777e2);
-$color-buttom:linear-gradient($color-secondary, $color-primary);
+$color-hover:linear-gradient(  #fd8fde, #a777e2);
+$color-buttom:linear-gradient(to bottom right, $color-secondary, $color-primary);
 $cards:15px;
 $buttom:30px;
-// pour for police
+//police
 $title: "Shrikhand", cursive;
 $text: "Roboto", sans-serif;
 

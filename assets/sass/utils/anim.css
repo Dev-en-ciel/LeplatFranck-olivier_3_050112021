@@ -1,5 +1,5 @@
 /* debut partie loader */
- .loader {
+ /* .loader {
   animation: loader 8s 3s; 
   position: relative;
   align-items: center;
@@ -9,7 +9,7 @@
   display: flex;
   inset: 0;
   background: linear-gradient(to bottom, rgb(146, 86, 220), rgb(191, 243, 230), rgb(255, 121, 217));
-} 
+}  */
 /* @keyframes loader {
   0% {
     opacity: 1;
