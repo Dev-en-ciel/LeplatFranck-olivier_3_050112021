@@ -1,0 +1,21 @@
+
+
+
+
+
+
+
+
+
+// queries for footer
+@media screen and (max-width: 992px) {
+  .contact h2 {
+    font-size: 20px;
+    text-align: start;
+  }
+  .about ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+}

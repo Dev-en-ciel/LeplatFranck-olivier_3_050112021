@@ -1,0 +1,17 @@
+@mixin h2 {
+  font-size: 30px;
+  font-family: $text;
+}
+@mixin btn {
+  background: $color-buttom;
+  border-radius: $buttom;
+  box-shadow: $shadow;
+  text-align: center;
+}
+
+@mixin btn-hover {
+  opacity: 0.7;
+  box-shadow: -5px 4px 12px #9356dc;
+  border-color: transparent;
+  border-color: 2px solid $color-hover;
+}

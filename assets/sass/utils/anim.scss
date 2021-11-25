@@ -1,0 +1,141 @@
+/* debut partie loader */
+// .loader {
+//   animation: loader 1s 3s forwards;
+//   position: fixed;
+//   align-items: center;
+//   justify-content: center;
+//   position: fixed;
+//   z-index: 10;
+//   display: flex;
+//   inset: 0;
+//   background: linear-gradient(to bottom, rgb(146, 86, 220), rgb(191, 243, 230), rgb(255, 121, 217));
+// }
+// @keyframes loader {
+//   0% {
+//     opacity: 1;
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+//   100% {
+//     opacity: 1;
+//     z-index: -1;
+//   }
+// }
+// .letter {
+//   position: fixed;
+//   top: 350px;
+//   font-family: "Shrikhand", cursive;
+//   font-size: 55px;
+//   background: -webkit-linear-gradient(#9356dc, #99e2d0, #ff79da);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   animation: text 1s ease-in-out 1 forwards;
+// }
+// @keyframes text {
+//   0% {
+//     transform: scale(0);
+//     opacity: 0;
+//   }
+//   50% {
+//     opacity: 0.5;
+//   }
+
+//   100% {
+//     transform: scale(1);
+//     opacity: 1;
+//   }
+// }
+// .spinner{
+//   position: absolute;
+//   top: 200px;
+//   border: 8px solid;
+//   border-radius: 50%;
+//   border-right-color: #99e2d0;
+//   border-left-color: #99e2d0;
+//   width: 80px;
+//   height: 80px;
+//   animation: load 1s infinite ease-in-out;
+// }
+// @keyframes load {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
+
+
+.menu-card__One,
+.menu-card__Two,
+.menu-card__Three {
+  animation: menu 4s;
+}
+@keyframes menu {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* animation for button */
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: -5px 4px 12px #99e2d0;
+  /* border-color: transparent; */
+  border-color: 2px solid #99e2d0;
+  animation: both 1.2s;
+}
+/*  animation for heart */
+.heart:hover {
+  animation: heart 2s ease-in;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+  transition: 1s;
+}
+@keyframes heart {
+  0% {
+    /* transform: scale(0); */
+    height: 0;
+  }
+ 
+  100% {
+    height: 100%;
+  }
+}
+
+/* animation for checks */
+.menu:hover .menu__check {
+  background-color: #99e2d0;
+  width: 150px;
+  transition-duration: 1s;
+  animation: check 0.8s ease-in-out reverse;
+}
+.menu:hover .menu__check i {
+  transition-duration: 1.5s;
+  animation: valid-check 0.8s ease-in;
+}
+
+@keyframes check {
+  0% {
+    width: 150px;
+  }
+  100% {
+    width: 20px;
+  }
+}
+@keyframes valid-check {
+  from {
+    opacity: 0.5;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=anim.css.map */
