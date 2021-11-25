@@ -1,4 +1,16 @@
-
+// queries pour les boutons choix
+@media screen and (max-width:360px) {
+  .choice__btn li{
+  font-size:13px ;
+  & i{
+  font-size: 15px;
+  }
+  }
+  .choice li::before{
+  right: 35px;
+  padding: 2px 6px;
+  }
+}
 // queries pour les cartes de restaurant
 @media screen and (max-width: 960px) {
   .card {

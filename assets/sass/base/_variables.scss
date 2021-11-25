@@ -12,13 +12,12 @@ $color-background:#f6f6f6;
 // color footer
 $color-black:#353535;
 $color-text:#ffff;
-// style for buttom
-$shadow:4px 4px 12px #bfbfbf;
+// style for button
+$box-shadow:4px 4px 12px #bfbfbf;
 $color-hover:linear-gradient(  #fd8fde, #a777e2);
-$color-buttom:linear-gradient(to bottom right, $color-secondary, $color-primary);
-$cards:15px;
-$buttom:30px;
-//police
-$title: "Shrikhand", cursive;
-$text: "Roboto", sans-serif;
-
+$color-button:linear-gradient(to bottom right, $color-secondary, $color-primary);
+$size-cards:15px;
+$size-button:30px;
+//policefont title
+$font-text: "Roboto", sans-serif;
+$font-title: "Shrikhand", cursive;

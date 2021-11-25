@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 /* debut partie loader */
+/*  animation for heart */
+@keyframes coeur-vide {
+  0% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .menu-card__Starter {
   animation: menu 2s ease-in-out forwards;
 }
@@ -22,23 +34,6 @@
   animation: both 1.2s;
 }
 
-/*  animation for heart */
-.heart:hover {
-  animation: heart 2s ease-in;
-  background: linear-gradient(to bottom right, #ff79da, #9356dc);
-  -webkit-background-clip: text;
-  transition: 1s;
-}
-
-@keyframes heart {
-  0% {
-    /* transform: scale(0); */
-    height: 0;
-  }
-  100% {
-    height: 100%;
-  }
-}
 /* animation for checks */
 .menu-card__Choice:hover .menu-card__Check {
   background-color: #99e2d0;
@@ -180,6 +175,9 @@ h1 img {
   object-fit: cover;
 }
 
+.choice {
+  background-color: white;
+}
 .choice h2 {
   font-size: 30px;
   font-family: "Roboto", sans-serif;
@@ -211,7 +209,7 @@ h1 img {
   color: #fafafa;
   background-color: #9356dc;
 }
-.choice .choice__btn li {
+.choice__btn li {
   width: 390px;
   counter-increment: step;
   align-items: center;
@@ -225,25 +223,25 @@ h1 img {
   font-weight: 600;
   color: #030303;
 }
-.choice .choice__btn li a {
+.choice__btn li a {
   color: black;
 }
-.choice .choice__btn li::before {
+.choice__btn li::before {
   content: counter(step);
 }
-.choice .choice__btn li i {
+.choice__btn li i {
   margin: 0px 20px 0px -5px;
   color: rgba(5, 5, 5, 0.42);
   font-size: 19px;
 }
-.choice .choice__btn ol li:hover {
+.choice__btn ol li:hover {
   background-color: rgba(255, 121, 217, 0.153);
   transition: ease-in 0.5s;
 }
-.choice .choice__btn ol li:hover i {
+.choice__btn ol li:hover i {
   color: #9356dc;
 }
-.choice .choice__btn ol li:hover a {
+.choice__btn ol li:hover a {
   color: #9356dc;
   transition: ease-in-out 0.6s;
 }
@@ -258,9 +256,9 @@ h1 img {
   background-color: #f6f6f6;
 }
 .browse-restaurants h2 {
-  width: 100%;
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Roboto", sans-serif;
+  width: 100%;
   margin: 20px 20px;
 }
 
@@ -329,18 +327,35 @@ article {
   margin-bottom: 20px;
 }
 
-.heart {
+.heart__vide {
   position: absolute;
   font-size: 25px;
   right: 30px;
   bottom: 30px;
-  cursor: pointer;
   z-index: 5;
-  opacity: 1;
 }
-.heart i:hover {
+.heart__vide__vide:hover {
+  animation: coeur-vide 1s forwards linear;
+  cursor: pointer;
+}
+
+.heart__vide:hover + i {
+  opacity: 1;
+  transform: scale(1);
+  transition: transform 1s linear;
+}
+
+.heart__plein {
+  position: absolute;
+  font-size: 25px;
+  right: 30px;
+  bottom: 30px;
+  opacity: 0;
+  background: linear-gradient(#fd8fde, #a777e2);
+  -webkit-background-clip: text;
   color: transparent;
-  font-weight: 600;
+  transform-origin: bottom;
+  transform: scale(0);
 }
 
 main {
@@ -526,6 +541,19 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
+  }
+}
+@media screen and (max-width: 360px) {
+  .choice__btn li {
+    font-size: 13px;
+  }
+  .choice__btn li i {
+    font-size: 15px;
+  }
+
+  .choice li::before {
+    right: 35px;
+    padding: 2px 6px;
   }
 }
 @media screen and (max-width: 960px) {

@@ -1,12 +1,13 @@
 @mixin h2 {
   font-size: 30px;
-  font-family: $text;
+  font-family: $font-text;
 }
 @mixin btn {
-  background: $color-buttom;
-  border-radius: $buttom;
-  box-shadow: $shadow;
+  background: $color-button;
+  border-radius: $size-button;
+  box-shadow: $box-shadow;
   text-align: center;
+  font-family: $font-text
 }
 
 @mixin btn-hover {
