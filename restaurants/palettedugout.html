@@ -1,180 +1,173 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../assets/css/normalize.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
     <title>La palette du goût</title>
-</head>
+  </head>
+
   <body class="restau">
-    <div>
-<!-- debut du header -->
-      <header>          <!-- logo -->
-        <a href="../index.html">
-          <h1>
-            <img src="../assets/images/logo/ohmyfood.png" alt="ohmyfood">
-          </h1>
-        </a>
+    <!-- debut du contenu -->
+    <div class="container">
+
+      <!-- debut du header -->
+      <header>
+        <!-- logo -->
+        <h1>
+          <a href="../index.html">
+            <img src="../assets/images/logo/ohmyfood.png" alt="ohmyfood" />
+          </a>
+        </h1>
         <a href="../index.html">
           <span class="return"><i class="fas fa-arrow-left"></i></span>
         </a>
       </header>
-<!-- fin du header -->
-<!-- debut contenu principal -->
-    <main>
-<!-- section banniere -->
-      <section class="ban">
-        <h2>
-        <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La note présentation">
-        </h2>
-      </section>
-<!-- fin de section banniere -->
-<!-- debut section des menus -->
-      <section class="bloc-menu">
-        <div class="restaurant-name">
-          <h2>La palette du goût</h2>
-          <span class="heart"><i class="far fa-heart"></i></span>
-        </div>
-        <!-- debut partie bloc menu-card -->
-<!-- partie une bloc ENTREES -->
-        <div class="menu-card">
-          <div class="menu-card__One">
-            <h3>Entrées</h3>
-            <div class="menu">
-              <div class="menu__choice">
-                <h4>Fricassée d'escargot</h4>
-                <p>Au piment d'espelette</p>
-              </div>
-              <div class="menu__price">
-                25€
-              </div>
-              <div class="menu__check">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </div>
-            <div class="menu">
-              <div class="menu__choice">
-                <h4>Foie gras de canard mi-cuit</h4>
-                <p>Et ses copeaux de truffe noire</p>
-              </div>
-              <div class="menu__price">
-                35€ 
-              </div>
-              <div class="menu__check">
-                <i class="fas fa-check-circle"></i> 
-              </div>
-            </div>
-            <div class="menu">
-              <div class="menu__choice">
-                <h4>Oeuf au plat</h4>
-                <p>Assaisonné à la truffe sur lit de caviar</p>
-              </div>
-              <div class="menu__price">
-                20€
-              </div>
-              <div class="menu__check">
-                <i class="fas fa-check-circle"></i>
-              </div>
-            </div>
-          </div>  
-          <!-- fin partie entrée -->
-<!-- fin partie une ENTREES -->
-<!-- debut de la partie des plats -->
-          <!-- debut partie Plats -->
-          <div class="menu-card__Two">
-            <h3>plats</h3>  
-            <div class="menu">
-            <div class="menu__choice">
-              <h4>Filet de boeuf aux herbes</h4>
-              <p>Accompagné de sa ribambelle de légumes</p>
-            </div>
-            <div class="menu__price">
-              40€
-            </div>
-            <div class="menu__check">
-              <i class="fas fa-check-circle"></i>
-            </div>
+      <!-- fin du header -->
+
+      <!-- debut contenu principal -->
+      <main>
+
+        <!-- section banniere -->
+        <section class="ban">
+          <h2>
+            <img src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La note présentation"/>
+          </h2>
+        </section>
+        <!-- fin de section banniere -->
+
+        <!-- debut section des menus -->
+        <section class="bloc-menu">
+          <div class="restaurant-name">
+            <h2>La palette du goût</h2>
+            <span class="heart"><i class="far fa-heart"></i></span>
           </div>
-          <div class="menu">
-            <div class="menu__choice">
-              <h4>Parmentier de queue de boeuf</h4>
-              <p>A la truffe noire sur sa purée de panais</p>
+
+          <!-- partie une bloc ENTREES -->
+          <div class="menu-card">
+            <!-- formulaire -->
+            <div class="menu-card__Starter">       
+              <h3>Entrées</h3>
+              <div class="menu-card__Choice">
+                <div class="menu-card__Title">
+                  <h4>Fricassée d'escargot</h4>
+                  <p>Au piment d'espelette</p>
+                </div>
+                 <div class="menu-card__Price">25€</div>              <!-- mettre le prix avec la bonne font-familly -->
+                <div class="menu-card__Check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="menu-card__Choice">
+                <div class="menu-card__Title">
+                  <h4>Foie gras de canard mi-cuit</h4>
+                  <p>Et ses copeaux de truffe noire</p>
+                </div>
+                <div class="menu-card__Price">35€</div>
+                 <div class="menu-card__Check">                                 
+                 <input type="radio" class="fas fa-check-circle" />
+                
+                </div>
+              </div>
+              <div class="menu-card__Choice">
+                <div class="menu-card__Title">
+                  <h4>Oeuf au plat</h4>
+                  <p>Assaisonné à la truffe sur lit de caviar</p>
+                </div>
+                <div class="menu-card__Price">20€</div>
+                <div class="menu-card__Check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
             </div>
-            <div class="menu__price">
-              35€
+            <!-- fin partie une ENTREES -->
+            
+            <!-- debut partie Plats -->
+            <div class="menu-card__Dishes">
+              <h3>plats</h3>
+              <div class="menu-card__Choice">
+                <div class="menu-card__Title">
+                  <h4>Filet de boeuf aux herbes</h4>
+                  <p>Accompagné de sa ribambelle de légumes</p>
+                </div>
+                <div class="menu-card__Price">40€</div>
+                <div class="menu-card__Check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="menu-card__Choice">
+                <div class="menu-card__Title">
+                  <h4>Parmentier de queue de boeuf</h4>
+                  <p>A la truffe noire sur sa purée de panais</p>
+                </div>
+                <div class="menu-card__Price">35€</div>
+                <div class="menu-card__Check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
+              <div class="menu-card__Choice">
+                <div class="menu-card__Title">
+                  <h4>Filet de turbot</h4>
+                  <p>Au agrumes</p>
+                </div>
+                <div class="menu-card__Price">44€</div>
+                <div class="menu-card__Check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
+              </div>
             </div>
-            <div class="menu__check">
-              <i class="fas fa-check-circle"></i>
-            </div>
-            </div>
-            <div class="menu">
-            <div class="menu__choice">
-              <h4>Filet de turbot</h4>
-              <p>Au agrumes</p>
-            </div>
-            <div class="menu__price">
-              44€
-            </div>
-            <div class="menu__check">
-              <i class="fas fa-check-circle"></i>
-            </div>
-          </div>
-          </div>
             <!-- fin partie Plats -->
-           <!-- debut partie Dessert -->
-          <div class="menu-card__Three">  
-            <h3>dessert</h3>
-            <div class="menu">
-              <div class="menu__choice">
-                <h4>Paris-Brest</h4>
-                <p>Revisité</p>
+
+            <!-- debut partie Dessert -->
+            <div class="menu-card__Dessert">
+              <h3>dessert</h3>
+              <div class="menu-card__Choice">
+                <div class="menu-card__Title">
+                  <h4>Paris-Brest</h4>
+                  <p>Revisité</p>
+                </div>
+                <div class="menu-card__Price">18€</div>
+                <div class="menu-card__Check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </div>
-              <div class="menu__price">
-                18€
+              <div class="menu-card__Choice">
+                <div class="menu-card__Title">
+                  <h4>Macaron au chocolat d'exception</h4>
+                  <p>Et glace à la vanille de Madagascar</p>
+                </div>
+                <div class="menu-card__Price">22€</div>
+                <div class="menu-card__Check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </div>
-              <div class="menu__check">
-                <i class="fas fa-check-circle"></i> 
-              </div>
-            </div>
-            <div class="menu">
-              <div class="menu__choice">
-                <h4>Macaron au chocolat d'exception</h4>
-                <p>Et glace à la vanille de Madagascar</p>
-              </div>
-              <div class="menu__price">
-                22€
-              </div>
-              <div class="menu__check">
-                <i class="fas fa-check-circle"></i> 
-              </div>
-            </div>
-            <div class="menu">
-              <div class="menu__choice">
-                <h4>Mousse au chocolat</h4>
-                <p>Au piment d'espelette et à la truffe noire</p>
-              </div>
-              <div class="menu__price">
-                23€
-              </div>
-              <div class="menu__check">
-                <i class="fas fa-check-circle"></i>
+              <div class="menu-card__Choice">
+                <div class="menu-card__Title">
+                  <h4>Mousse au chocolat</h4>
+                  <p>Au piment d'espelette et à la truffe noire</p>
+                </div>
+                <div class="menu-card__Price">23€</div>
+                <div class="menu-card__Check">
+                  <i class="fas fa-check-circle"></i>
+                </div>
               </div>
             </div>
+            <!-- fin de la partie dessert -->
+
           </div>
-          <!-- fin de la partie dessert -->
-        </div> 
-        <div class="order">
-          <a href="#">Commander</a>
-        </div>
+          <div class="btn-Order">
+            <a href="#">Commander</a>
+          </div>
+          <!-- fin formulaire -->
           <!-- fin du bloc menu-card -->
-      </section> 
-<!-- fin de section des menus -->
-    </main>      
-<!-- fin de section principal -->
-<!-- footer -->
+        </section>
+        <!-- fin de section des menus -->
+      </main>
+      <!-- fin de section principal -->
+      <!-- footer -->
       <footer>
         <div class="contact">
           <h2>ohmyfood</h2>
@@ -191,14 +184,10 @@
                 </a>
               </li>
               <li>
-                <a href="#">
-                Mention légales
-                </a>
+                <a href="#"> Mention légales </a>
               </li>
               <li>
-                <a href="#">
-                Contact
-                </a>
+                <a href="#"> Contact </a>
               </li>
             </ul>
           </div>
