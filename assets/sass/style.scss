@@ -1,10 +1,12 @@
 // police
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 // loader
-@import "../sass/utils/anim.css";
+@import "../sass/utils/_anim.scss";
 // variables
 @import "./base/_variables";
-@import "./base/_mixin";
+@import "./base/_mixins";
+// styles generale
+@import "./layout/_general";
 // style header
 @import "./layout/_header";
 // style pour les boutons  
@@ -12,11 +14,10 @@
 // style pour les cards restaurant
 @import "./components/_card";
 // styles pour les pages menu
-@import "./layout/_pmenu";
-// styles generale
-@import "./layout/_general";
+@import "./layout/_pages";
 // style footer
 @import "./layout/_footer";
+@import "./layout/_mediaqueries";
 
 
 
