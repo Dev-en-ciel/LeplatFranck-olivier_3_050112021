@@ -9,16 +9,11 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>ohmyfood</title>
   </head>
+
   <body class="principal">
-<!-- part loader -->
-    <div class="loader">
-      <div class="letter">
-        OHMYFOOD!
-      </div>
-    </div>  
-<!-- end part loader -->
-<!-- header -->
-    <div>
+    
+    <!-- header -->
+    <div class="container">
       <header>          <!-- logo -->
         <h1>
           <a href="#">
@@ -26,7 +21,8 @@
           </a>
         </h1>
       </header>
-<!-- section one -->
+
+      <!-- section one -->
       <section class="home">
         <div class="home__location">
           <form action="#" method="post">
@@ -35,13 +31,12 @@
           </form>
         </div>
         <div class="home__slogan">
-          <h2>Réservez le menu qui vous convient</h2>
-          <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-          <div class="btn">
-            <a href="#restaurants">Explorez nos restaurants</a>
-          </div>
+            <h2>Réservez le menu qui vous convient</h2>
+            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+             <a href="#restaurants">Explorez nos restaurants</a>  <!-- retirer la div et mattre que le a -->
         </div>
       </section>
+
 <!-- fin section one -->
       <main> 
         <section class="choice">
@@ -62,13 +57,14 @@
                 <a href="#">
                   <i class="fas fa-store"></i>Dégustez au restaurant
                 </a>
-              </l>
+              </li>
             </ol>
           </div>
         </section>
+
 <!-- section two -->
         <section class="browse-restaurants" id="restaurants">
-          <h2>Restaurants</h2>
+            <h2>Restaurants</h2>
           <article>
             <div class="card ">
               <span class="card__new">Nouveau</span>
@@ -115,6 +111,17 @@
           </article>
         </section>
       </main>
+  
+  <!-- part loader -->
+    <div class="loader">
+      <div class="letter">
+        OHMYFOOD!
+      </div>
+      <div class="spinner"></div>
+      <div></div>
+    </div>  
+    <!-- end part loader -->
+
 <!-- footer -->
       <footer>
         <div class="contact">
