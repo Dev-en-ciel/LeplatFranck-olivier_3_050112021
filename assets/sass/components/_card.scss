@@ -80,6 +80,7 @@ article {
 .heart__vide {
   position: absolute;
   font-size: 25px;
+  color: #ff79da;
   right: 30px;
   bottom: 30px;
   z-index: 5;
@@ -105,5 +106,4 @@ article {
   transform-origin: bottom;
   transform: scale(0);
 }
-// animation: heart 2s ease-in;
 // background: linear-gradient(to bottom right, #ff79da, #9356dc);

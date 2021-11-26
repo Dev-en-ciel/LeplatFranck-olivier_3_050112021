@@ -25,26 +25,29 @@ main {
   background-color: #f6f6f6;
   width: 100%;
   h2,
-  i {
+  .heart__vide {
     display: flex;
     white-space: nowrap;
-    margin: 0 20px;
     padding: 10px;
     font-size: 25px;
-    &:hover {
-      color: transparent;
-      font-weight: 600;
+    :hover {
+      animation: coeur-vide 1s forwards linear;
+      cursor: pointer;
     }
   }
 }
-.heart {
+.restaurant-name .heart__plein {
+  position: absolute;
   font-size: 25px;
-  cursor: pointer;
-  z-index: 5;
-  opacity: 1;
+  right: 40px;
+  bottom: 40px;
+  opacity: 0;
+  background: $color-hover;
+  -webkit-background-clip: text;
+  color: transparent;
+  transform-origin: bottom;
+  transform: scale(0);
 }
-
-/* titre des menu */
 /* carte de menu */
 .menu-card {
   box-sizing: border-box;
@@ -117,7 +120,8 @@ main {
     color: #f2f2f2;
     width: auto;
     border-radius: 0px 15px 15px 0px;
-    i {
+   
+    label i{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -125,6 +129,20 @@ main {
       width: 100%;
       margin: 0;
       font-size: 18px;
+    
     }
   }
+}
+input{
+display: none;
+}
+.menu-card__Choice:hover .menu-card__Check{
+      background-color: #99e2d0;
+      width: 150px;
+      transition-duration: 1s;
+      animation: check 0.8s ease-in-out reverse;
+}
+.menu-card__Choice:hover .menu-card__Check i {
+  transition-duration: 1.5s;
+  animation: valid-check 0.8s ease-in;
 }
