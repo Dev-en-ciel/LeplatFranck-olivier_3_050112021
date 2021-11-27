@@ -8,3 +8,61 @@
 a {
   text-decoration: none;
 }
+/* debut partie loader */
+.loader {
+  position: fixed;
+  z-index: 100;
+  inset: 0px;
+  animation: loader 4s;
+  animation-fill-mode: forwards;
+}
+.word {
+  object-position: 50% 50%;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 50%;
+  bottom: 50%;
+}
+.word div {
+  box-sizing: border-box;
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  border: 8px solid transparent;
+  border-top-color: #9356dc;
+  border-radius: 50%;
+  animation: loaderOne 3s linear;
+  animation-fill-mode: forwards;
+}
+.word div:nth-child(2) {
+  box-sizing: border-box;
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  border: 8px solid transparent;
+  border-bottom-color: #ff79da;
+  border-radius: 50%;
+  animation: loaderOne 3s linear;
+  animation-fill-mode: forwards;
+}
+.word div:nth-child(3) {
+  border: 8px solid transparent;
+  border-left-color: #99e2d0;
+  width: 100%;
+  height: 100%;
+  top: 25px;
+  left: 25px;
+  animation: loaderOne 6s linear;
+  animation-fill-mode: forwards;
+}
+.word div:nth-child(4) {
+  border: 8px solid transparent;
+  border-right-color: #99e2d0;
+  width: 100%;
+  height: 100%;
+  top: 25px;
+  left: 30px;
+  animation: loaderOne 6s linear;
+  animation-fill-mode: forwards;
+}
