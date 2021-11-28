@@ -560,7 +560,7 @@ main {
   padding: 8px 20px;
   margin-left: 20px;
 }
-.menu-card__Check {
+ label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -568,7 +568,7 @@ main {
   width: auto;
   border-radius: 0px 15px 15px 0px;
 }
-.menu-card__Check label i {
+label i {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -578,18 +578,25 @@ main {
   font-size: 18px;
 }
 
+.menu-card__Choice label input + i {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
 input {
   display: none;
 }
 
-.menu-card__Choice:hover .menu-card__Check {
+
+.menu-card__Choice:hover label {
   background-color: #99e2d0;
   width: 150px;
   transition-duration: 1s;
   animation: check 0.8s ease-in-out reverse;
 }
 
-.menu-card__Choice:hover .menu-card__Check i {
+.menu-card__Choice:hover label + i {
   transition-duration: 1.5s;
   animation: valid-check 0.8s ease-in;
 }

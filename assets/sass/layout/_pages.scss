@@ -120,8 +120,7 @@ main {
     color: #f2f2f2;
     width: auto;
     border-radius: 0px 15px 15px 0px;
-   
-    label i{
+   i{
       display: flex;
       justify-content: center;
       align-items: center;
@@ -129,20 +128,31 @@ main {
       width: 100%;
       margin: 0;
       font-size: 18px;
-    
     }
   }
 }
-input{
-display: none;
+.menu-card__Choice label input + i{
+position: relative;
+top: 25px;
+display: flex;
+justify-content: center;
+// color:transparent;
+border: 2px solid blue;
+cursor: pointer;
 }
-.menu-card__Choice:hover .menu-card__Check{
+input{
+display: none
+}
+label{
+border: 1px solid orange;
+}
+.menu-card__Choice:hover label{
       background-color: #99e2d0;
       width: 150px;
       transition-duration: 1s;
       animation: check 0.8s ease-in-out reverse;
 }
-.menu-card__Choice:hover .menu-card__Check i {
+.menu-card__Choice:hover label + i {
   transition-duration: 1.5s;
   animation: valid-check 0.8s ease-in;
 }

@@ -1,0 +1,147 @@
+/* debut partie loader */
+@keyframes loader {
+  0% {
+    background: -webkit-linear-gradient(#9356dc, #99e2d0, #ff79da);
+
+    opacity: 1;
+  }
+  50% {
+    background: -webkit-linear-gradient(#9356dc, #99e2d0, #ff79da);
+
+    opacity: 0.5;
+  }
+  100% {
+    background: -webkit-linear-gradient(#9356dc, #99e2d0, #ff79da);
+
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes word {
+  0% {
+    transform: rotate(0deg);
+    border-width: 10px;
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(180deg);
+    border-width: 1px;
+    opacity: 0.5;
+  }
+  100% {
+    transform: rotate(360deg);
+    border-width: 10px;
+    opacity: 0;
+  }
+}
+// .loaderTwo {
+//   width: 90px;
+//   height: 90px;
+//   position: fixed;
+//   right: 50%;
+//   bottom: 49.3%;
+// }
+// .loaderTwo div {
+//   box-sizing: border-box;
+//   position: absolute;
+//   width: 80%;
+//   height: 80%;
+//   top: 25px;
+//   left: 30px;
+//   border: 8px solid transparent;
+//   border-right-color: #ff79da;
+//   border-radius: 50%;
+//   animation: loaderTwo 3s linear;
+//   /* animation-duration: 4s; */
+//   animation-fill-mode: forwards;
+// }
+// .loaderTwo div:nth-child(2) {
+//   border: 8px solid transparent;
+//   border-left-color: #9356dc;
+//   animation: loaderTwo 4s linear;
+//   /* animation-duration: 5s; */
+//   animation-fill-mode: forwards;
+// }
+// @keyframes loaderTwo {
+//   0% {
+//     transform: rotate(380deg);
+//     border-width: 10px;
+//     opacity: 1;
+//   }
+//   50% {
+//     transform: rotate(180deg);
+//     border-width: 1px;
+//     opacity: 1;
+//   }
+//   100% {
+//     transform: rotate(0deg);
+//     border-width: 10px;
+//     opacity: 0;
+//   }
+// }
+/* fin animation loader */
+
+/*  animation for heart */
+@keyframes coeur-vide {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.menu-card__Starter {
+  animation: menu 2s ease-in-out forwards;
+}
+
+.menu-card__Dishes {
+  animation: menu 2s 2s;
+  
+}
+.menu-card__Dessert {
+  animation: menu 2s 4s;
+  
+}
+
+
+/* animation for button */
+.btn:hover {
+  opacity: 0.8;
+  box-shadow: -5px 4px 12px #99e2d0;
+  /* border-color: transparent; */
+  border-color: 2px solid #99e2d0;
+  animation: both 1.2s;
+}
+
+/* animation for checks */
+// .menu-card__Choice:hover .menu-card__Check {
+//   background-color: #99e2d0;
+//   width: 150px;
+//   transition-duration: 1s;
+//   animation: check 0.8s ease-in-out reverse;
+// }
+@keyframes check {
+  0% {
+    width: 150px;
+  }
+  100% {
+    width: 20px;
+  }
+}
+
+@keyframes valid-Check {
+  from {
+    opacity: 0.5;
+    transform: rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+/*# sourceMappingURL=anim.css.map */
