@@ -11,199 +11,185 @@
 </head>
    <body class="restau">
     <div>
-<!-- debut du header -->
-      <header>          <!-- logo -->
+    
+    <!-- debut du header -->
+      <header>          
         <a href="../index.html">
           <h1>
             <img src="../assets/images/logo/ohmyfood.png" alt="ohmyfood">
           </h1>
         </a>
-        <a href="../index.html">
+      <a href="../index.html">
           <span class="return"><i class="fas fa-arrow-left"></i></span>
         </a>
       </header>
-<!-- fin du header -->
-<!-- debut contenu principal -->
+      <!-- fin du header -->
+      <!-- debut contenu principal -->
     <main>
-<!-- section banniere -->
+      <!-- section banniere -->
       <section class="ban">
         <h2>
           <img src="/assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="La note présentation">
         </h2>
       </section>
-<!-- fin de section banniere -->
-<!-- debut section des menus -->
+      <!-- fin de section banniere -->
+      <!-- debut section des menus -->
       <section class="bloc-menu">
         <div class="restaurant-name">
           <h2>Le délice des sens</h2>
-          <span class="heart"><i class="far fa-heart"></i></span>
+         <span class="heart">
+            <i class="far fa-heart heart__vide"></i>
+            <i class="fas fa-heart heart__plein"></i>
+            </span>
         </div>
         <!-- debut partie bloc menu-card -->
-<!-- partie une bloc ENTREES -->
         <div class="menu-card">
-          <div class="menu-card__One">
+          <div class="menu-card__Starter">
             <h3>Entrées</h3>
-            <div class="menu">
-              <div class="menu__choice">
+            <div class="menu-card__Choice">
+              <div class="menu-card__Title">
                 <h4>Tartare de thon</h4>
                 <p>Assaisonné au yuzu</p>
               </div>
-              <div class="menu__price">
-                25€
-              </div>
-              <div class="menu__check">
-                <i class="fas fa-check-circle"></i>
-              </div>
+              <div class="menu__price">25€</div>
+              <label class="btn-check">
+                  <input type="radio" class="fas fa-check-circle" value="checked"/>
+                  <!-- <i class="fas fa-check-circle"></i>  -->
+                </label>
             </div>
-            <div class="menu">
-              <div class="menu__choice">
+            <div class="menu-card__Choice">
+              <div class="menu-card__Title">
                 <h4>Bouchée de homard croustillant</h4>
                 <p>Et sa farandole de petis légumes</p>
               </div>
-              <div class="menu__price">
-                35€ 
-              </div>
-              <div class="menu__check">
-                <i class="fas fa-check-circle"></i> 
-              </div>
+              <div class="menu__price">35€ </div>
+              <label class="btn-check">
+                  <input type="radio" class="fas fa-check-circle" value="checked"/>
+                  <!-- <i class="fas fa-check-circle"></i>  -->
+                </label>
             </div>
-            <div class="menu">
-              <div class="menu__choice">
+            <div class="menu-card__Choice">
+              <div class="menu-card__Title">
                 <h4>Velouté de cèpes</h4>
                 <p>Aux truffes</p>
               </div>
-              <div class="menu__price">
-                20€
-              </div>
-              <div class="menu__check">
-                <i class="fas fa-check-circle"></i>
-              </div>
+              <div class="menu__price">20€</div>
+              <label class="btn-check">
+                  <input type="radio" class="fas fa-check-circle" value="checked"/>
+                  <!-- <i class="fas fa-check-circle"></i>  -->
+                </label>
             </div>
           </div>  
           <!-- fin partie entrée -->
-<!-- fin partie une ENTREES -->
-<!-- debut de la partie des plats -->
+
           <!-- debut partie Plats -->
-          <div class="menu-card__Two">
+          <div class="menu-card__Dishes">
             <h3>plats</h3>  
-            <div class="menu">
-            <div class="menu__choice">
+            <div class="menu-card__Choice">
+            <div class="menu-card__Title">
               <h4>Poulet rôti aux herbes de provence</h4>
               <p>Et sa crème de truffe</p>
             </div>
-            <div class="menu__price"> 
-              40€
-            </div>
+            <div class="menu-card__Price">35€</div>
             <div class="menu__check"> 
               <i class="fas fa-check-circle"></i>
             </div>
           </div>
-          <div class="menu">
-            <div class="menu__choice">
+          <div class="menu-card__Choice">
+            <div class="menu-card__Title">
               <h4>Langouste rôtie</h4>
               <p>Et ses légumes de saison</p>
             </div>
-            <div class="menu__price">
-              35€
+            <div class="menu-card__Price">35€</div>
+            <label class="btn-check">
+                  <input type="radio" class="fas fa-check-circle" value="checked"/>
+                  <!-- <i class="fas fa-check-circle"></i>  -->
+                </label>
             </div>
-            <div class="menu__check"> 
-              <i class="fas fa-check-circle"></i>
-            </div>
-            </div>
-            <div class="menu">
-            <div class="menu__choice">
+            <div class="menu-card__Choice">
+            <div class="menu-card__Title">
               <h4>Côte de boeuf Angus</h4>
               <p>Et sa purée de panais</p>
             </div>
-            <div class="menu__price">
-              44€
-            </div>
-            <div class="menu__check">
-              <i class="fas fa-check-circle"></i>
-            </div>
+            <div class="menu-card__Price">35€</div>
+            <label class="btn-check">
+                  <input type="radio" class="fas fa-check-circle" value="checked"/>
+                  <!-- <i class="fas fa-check-circle"></i>  -->
+                </label>
           </div>
           </div>
             <!-- fin partie Plats -->
            <!-- debut partie Dessert -->
-          <div class="menu-card__Three">  
+          <div class="menu-card__Dessert">  
             <h3>dessert</h3>
-            <div class="menu">
-              <div class="menu__choice">
+            <div class="menu-card__Choice">
+              <div class="menu-card__Title">
                 <h4>Farandole de desserts</h4>
                 <p>Du chef</p>
               </div>
-              <div class="menu__price">
-                18€
-              </div>
-              <div class="menu__check">
-                <i class="fas fa-check-circle"></i> 
-              </div>
+              <div class="menu-card__Price">18€</div>
+              <label class="btn-check">
+                  <input type="radio" class="fas fa-check-circle" value="checked"/>
+                  <!-- <i class="fas fa-check-circle"></i>  -->
+                </label>
             </div>
-            <div class="menu">
-              <div class="menu__choice">
+            <div class="menu-card__Choice">
+              <div class="menu-card__Title">
                 <h4>Crème brûlée</h4>
                 <p>Revisitée</p>
               </div>
-              <div class="menu__price">
-                22€
-              </div>
-              <div class="menu__check">
-                <i class="fas fa-check-circle"></i> 
-              </div>
+              <div class="menu-card__Price">22€</div>
+              <label class="btn-check">
+                  <input type="radio" class="fas fa-check-circle" value="checked"/>
+                  <!-- <i class="fas fa-check-circle"></i>  -->
+                </label>
             </div>
-            <div class="menu">
-              <div class="menu__choice">
+            <div class="menu-card__Choice">
+              <div class="menu-card__Title">
                 <h4>Tiramisu</h4>
                 <p>A la noisette</p>
               </div>
-              <div class="menu__price">
-                23€
-              </div>
-              <div class="menu__check">
-                <i class="fas fa-check-circle"></i>
-              </div>
+              <div class="menu-card__Price">23€</div>
+              <label class="btn-check">
+                  <input type="radio" class="fas fa-check-circle" value="checked"/>
+                  <!-- <i class="fas fa-check-circle"></i>  -->
+                </label>
             </div>
           </div>
           <!-- fin de la partie dessert -->
+
         </div> 
-        <div class="order">
-          <a href="#">Commander</a>
-        </div>
+        <div class="btn-Order">
+            <a href="#">Commander</a>
+          </div> 
           <!-- fin du bloc menu-card -->
       </section> 
-<!-- fin de section des menus -->
+      <!-- fin de section des menus -->
     </main>      
-<!-- fin de section principal -->
+    <!-- fin de section principal -->
+
       <!-- footer -->
-    <footer>
-      <div class="contact">
+      <footer>
+        <div class="contact">
           <h2>ohmyfood</h2>
-        <div class="about">
-          <ul>
-            <li>
-              <a href="#">
-                <i class="fas fa-utensils"></i>Proposer un restaurant
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fas fa-hands-helping two"></i>Devenir partenaire
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Mentions légales
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                Contact
-              </a>
-            </li>
-          </ul>
+          <div class="about">
+            <ul>
+              <li>
+                <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
+              </li>
+              <li>
+                <a href="#"><i class="fas fa-hands-helping two"></i>Devenir partenaire</a>
+              </li>
+              <li>
+                <a href="#"> Mentions légales </a>
+              </li>
+              <li>
+                <a href="mailto:ohmyfood@fictif.com">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
   </div>  
 </body>
 </html>
