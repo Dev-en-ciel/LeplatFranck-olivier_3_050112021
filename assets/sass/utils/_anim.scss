@@ -59,7 +59,7 @@
   }
 }
 // animation des bouton menu
-@keyframes Starter {
+@keyframes Menu-Card {
   0%{
 transform:scale(0);
  }
@@ -68,14 +68,6 @@ transform:scale(1);
   }
 }
 
-.menu-card__Dishes {
-  animation: menu 2s 2s;
-  
-}
-.menu-card__Dessert {
-  animation: menu 2s 4s;
-  
-}
 
 
 /* animation for button */

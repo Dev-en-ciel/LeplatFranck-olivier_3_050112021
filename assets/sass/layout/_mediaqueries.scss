@@ -5,30 +5,29 @@
     font-size: 40px;
     height: 80px;
   }
-  .loader div{
-  width: 50px;
-  height: 50px;
-  border-top: 10px solid;
-  top: 300px;
-  right: 50%;
+  .loader div {
+    width: 50px;
+    height: 50px;
+    border-top: 10px solid;
+    top: 300px;
+    right: 50%;
   }
 }
 // queries pour les boutons choix
-@media screen and ( max-width:1020px) {
+@media screen and (max-width: 1020px) {
   .choice__btn li {
-  width: 40%;
+    width: 40%;
   }
 }
-@media screen and ( max-width:800px) {
+@media screen and (max-width: 800px) {
   .choice__btn li {
-  width: 65%;
+    width: 65%;
   }
 }
-
 
 @media screen and (max-width: 460px) {
   .choice__btn li {
-  width: 90%;
+    width: 90%;
     font-size: 13px;
     & i {
       font-size: 15px;
@@ -54,23 +53,27 @@
     & img {
       height: 170px;
     }
-    .heart__plein{
-    right: 30px;
+    .heart__plein {
+      right: 30px;
     }
   }
 }
 
 // queries pour les boutons choix menus
 @media screen and (max-width: 420px) {
-.heart__vide {
-  right: 30px;
-  bottom: 30px;
+  .restaurant-name h2{
+  font-size: 28px;
   }
- .restaurant-name .heart__plein{
-  right:25px;
-  bottom: 30px;
+  .restaurant-name .heart__vide {
+    right: 20px;
+    top: 43px;
+    padding: 0;
   }
-  
+ .restaurant-name .heart__plein {
+    right: 20px;
+    top: 40px;
+  }
+
   .menu-card {
     justify-content: center;
   }
@@ -82,14 +85,13 @@
   }
   .menu-card__Choice h4 {
     font-size: 14px;
-    }
-  .menu-card__Choice  p {
-      font-size: 12px;
-    
+  }
+  .menu-card__Choice p {
+    font-size: 12px;
   }
   .menu-card__Price {
-  font-size: 12px;
-  padding:8px 5px;
+    font-size: 12px;
+    padding: 8px 5px;
   }
 }
 // queries pour le footer
