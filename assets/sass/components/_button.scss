@@ -33,7 +33,7 @@
     background-color: $color-primary;
   }
   &__btn li {
-    width: 390px;
+    width: 25%;
     counter-increment: step;
     align-items: center;
     padding: 25px;
@@ -68,4 +68,17 @@
       transition: ease-in-out 0.6s;
     }
   }
+}
+.btn-Order  {
+align-self: center;
+@include btn;
+padding: 20px;
+width: 200px;
+& a{
+color: white;
+}
+}
+
+.btn-Order:hover {
+@include btn-hover;
 }

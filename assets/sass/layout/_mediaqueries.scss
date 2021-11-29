@@ -54,17 +54,20 @@
     & img {
       height: 170px;
     }
+    .heart__plein{
+    right: 30px;
+    }
   }
 }
 
 // queries pour les boutons choix menus
 @media screen and (max-width: 420px) {
 .heart__vide {
-  right: 5px;
-  bottom: 20px;
+  right: 30px;
+  bottom: 30px;
   }
  .restaurant-name .heart__plein{
-  right:15px;
+  right:25px;
   bottom: 30px;
   }
   
