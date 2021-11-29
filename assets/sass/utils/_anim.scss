@@ -8,7 +8,7 @@
   50% {
     background: -webkit-linear-gradient(#9356dc, #99e2d0, #ff79da);
 
-    opacity: 0.5;
+    opacity:1;
   }
   100% {
     background: -webkit-linear-gradient(#9356dc, #99e2d0, #ff79da);
@@ -19,69 +19,34 @@
 }
 @keyframes word {
   0% {
-    transform: rotate(0deg);
-    border-width: 10px;
+    transform: scale(0);
     opacity: 1;
   }
-  50% {
-    transform: rotate(180deg);
-    border-width: 1px;
-    opacity: 0.5;
-  }
+  
   100% {
-    transform: rotate(360deg);
-    border-width: 10px;
+    transform: scale(1);
     opacity: 0;
   }
 }
-// .loaderTwo {
-//   width: 90px;
-//   height: 90px;
-//   position: fixed;
-//   right: 50%;
-//   bottom: 49.3%;
-// }
-// .loaderTwo div {
-//   box-sizing: border-box;
-//   position: absolute;
-//   width: 80%;
-//   height: 80%;
-//   top: 25px;
-//   left: 30px;
-//   border: 8px solid transparent;
-//   border-right-color: #ff79da;
-//   border-radius: 50%;
-//   animation: loaderTwo 3s linear;
-//   /* animation-duration: 4s; */
-//   animation-fill-mode: forwards;
-// }
-// .loaderTwo div:nth-child(2) {
-//   border: 8px solid transparent;
-//   border-left-color: #9356dc;
-//   animation: loaderTwo 4s linear;
-//   /* animation-duration: 5s; */
-//   animation-fill-mode: forwards;
-// }
-// @keyframes loaderTwo {
-//   0% {
-//     transform: rotate(380deg);
-//     border-width: 10px;
-//     opacity: 1;
-//   }
-//   50% {
-//     transform: rotate(180deg);
-//     border-width: 1px;
-//     opacity: 1;
-//   }
-//   100% {
-//     transform: rotate(0deg);
-//     border-width: 10px;
-//     opacity: 0;
-//   }
-// }
+@keyframes border-One{
+   100% {
+    transform: skew(-10deg) translateX(50px) rotate(405deg);
+    opacity: 1;
+  }
+}
+@keyframes border-Two{
+   100% {
+    transform: skew(-10deg) rotate(525deg);
+  }
+}
+@keyframes border-Three{
+   100% {
+    transform: skew(-10deg) translateX(20px) translateY(-50px) rotate(645deg)
+  }
+}
 /* fin animation loader */
 
-/*  animation for heart */
+/*  animation du coeur */
 @keyframes coeur-vide {
   0% {
     opacity: 1;
@@ -119,12 +84,6 @@
 }
 
 /* animation for checks */
-// .menu-card__Choice:hover .menu-card__Check {
-//   background-color: #99e2d0;
-//   width: 150px;
-//   transition-duration: 1s;
-//   animation: check 0.8s ease-in-out reverse;
-// }
 @keyframes check {
   0% {
     width: 150px;

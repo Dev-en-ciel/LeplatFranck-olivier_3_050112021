@@ -1,6 +1,34 @@
+// queries pour le loader
+@media screen and (max-width: 662px) {
+  .word {
+    line-height: 80px;
+    font-size: 40px;
+    height: 80px;
+  }
+  .loader div{
+  width: 50px;
+  height: 50px;
+  border-top: 10px solid;
+  top: 300px;
+  right: 50%;
+  }
+}
 // queries pour les boutons choix
-@media screen and (max-width: 360px) {
+@media screen and ( max-width:1020px) {
   .choice__btn li {
+  width: 40%;
+  }
+}
+@media screen and ( max-width:800px) {
+  .choice__btn li {
+  width: 65%;
+  }
+}
+
+
+@media screen and (max-width: 460px) {
+  .choice__btn li {
+  width: 90%;
     font-size: 13px;
     & i {
       font-size: 15px;
@@ -31,6 +59,15 @@
 
 // queries pour les boutons choix menus
 @media screen and (max-width: 420px) {
+.heart__vide {
+  right: 5px;
+  bottom: 20px;
+  }
+ .restaurant-name .heart__plein{
+  right:15px;
+  bottom: 30px;
+  }
+  
   .menu-card {
     justify-content: center;
   }
@@ -62,14 +99,5 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
-  }
-}
-// queries pour le loader
-@media screen and (max-width: 662px) {
-  .word {
-    line-height: 80px;
-    font-size: 40px;
-    width: 300px;
-    height: 80px;
   }
 }
