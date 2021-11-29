@@ -28,8 +28,9 @@ main {
   .heart__vide {
     display: flex;
     white-space: nowrap;
+    top: 40px;
     padding: 10px;
-    font-size: 25px;
+    font-size: 30px;
     :hover {
       animation: coeur-vide 1s forwards linear;
       cursor: pointer;
@@ -38,9 +39,9 @@ main {
 }
 .restaurant-name .heart__plein {
   position: absolute;
-  font-size: 25px;
+  font-size: 30px;
   right: 40px;
-  bottom: 40px;
+  bottom: 35px;
   opacity: 0;
   background: $color-hover;
   -webkit-background-clip: text;
@@ -113,44 +114,48 @@ main {
     padding: 8px 20px;
     margin-left: 20px;
   }
-  &__Check {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #f2f2f2;
-    width: auto;
-    border-radius: 0px 15px 15px 0px;
-   i{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #f2f2f2;
-      width: 100%;
-      margin: 0;
-      font-size: 18px;
-    }
-  }
 }
-.menu-card__Choice label input + i{
-position: relative;
-top: 25px;
-display: flex;
-justify-content: center;
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2f2f2;
+  width: auto;
+  border-radius: 0px 15px 15px 0px;
+}
+label i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2f2f2;
+  margin: 0;
+  font-size: 18px;
+}
+// <label for="valid" class="menu-card__check">
+// <input type="radio" id="valid" class="check"/>
+// .menu-card__Choice label + i{
+// display: flex;
+// justify-content: center;
 // color:transparent;
-border: 2px solid blue;
-cursor: pointer;
+// cursor: pointer;
+// }
+input[type="radio"].fas {
+  // display: none;
 }
-input{
-display: none
+input[type="radio"]#btn-check::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  border: 2px solid red;
+  font-weight: 900;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.808);
 }
-label{
-border: 1px solid orange;
-}
-.menu-card__Choice:hover label{
-      background-color: #99e2d0;
-      width: 150px;
-      transition-duration: 1s;
-      animation: check 0.8s ease-in-out reverse;
+
+.menu-card__Choice:hover label {
+  background-color: #99e2d0;
+  width: 150px;
+  transition-duration: 1s;
+  animation: check 0.8s ease-in-out reverse;
 }
 .menu-card__Choice:hover label + i {
   transition-duration: 1.5s;
