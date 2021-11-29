@@ -115,6 +115,17 @@ main {
     margin-left: 20px;
   }
 }
+// animation des boutons
+.menu-card__Starter{
+animation: Starter 2s ease-in-out 1.2s normal both;
+}
+.menu-card__Dishes{
+animation: Starter 2s ease-in-out 2s normal both;
+}
+.menu-card__Dessert{
+animation: Starter 3s ease-in-out 3s normal both;
+}
+
 label {
   display: flex;
   justify-content: center;

@@ -52,10 +52,14 @@
     opacity: 0;
   }
 }
-.menu-card__Starter {
-  animation: menu 2s ease-in-out forwards;
+@keyframes Starter {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
-
 .menu-card__Dishes {
   animation: menu 2s 2s;
 }
@@ -582,6 +586,18 @@ main {
   left: 15px;
   padding: 8px 20px;
   margin-left: 20px;
+}
+
+.menu-card__Starter {
+  animation: Starter 2s ease-in-out 1.2s normal both;
+}
+
+.menu-card__Dishes {
+  animation: Starter 2s ease-in-out 2s normal both;
+}
+
+.menu-card__Dessert {
+  animation: Starter 3s ease-in-out 3s normal both;
 }
 
 label {
