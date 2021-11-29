@@ -7,7 +7,7 @@
   }
   50% {
     background: -webkit-linear-gradient(#9356dc, #99e2d0, #ff79da);
-    opacity: 0.5;
+    opacity: 1;
   }
   100% {
     background: -webkit-linear-gradient(#9356dc, #99e2d0, #ff79da);
@@ -17,23 +17,32 @@
 }
 @keyframes word {
   0% {
-    transform: rotate(0deg);
-    border-width: 10px;
+    transform: scale(0);
     opacity: 1;
   }
-  50% {
-    transform: rotate(180deg);
-    border-width: 1px;
-    opacity: 0.5;
-  }
   100% {
-    transform: rotate(360deg);
-    border-width: 10px;
+    transform: scale(1);
     opacity: 0;
   }
 }
+@keyframes border-One {
+  100% {
+    transform: skew(-10deg) translateX(50px) rotate(405deg);
+    opacity: 1;
+  }
+}
+@keyframes border-Two {
+  100% {
+    transform: skew(-10deg) rotate(525deg);
+  }
+}
+@keyframes border-Three {
+  100% {
+    transform: skew(-10deg) translateX(20px) translateY(-50px) rotate(645deg);
+  }
+}
 /* fin animation loader */
-/*  animation for heart */
+/*  animation du coeur */
 @keyframes coeur-vide {
   0% {
     opacity: 1;
@@ -99,66 +108,57 @@ a {
 
 /* debut partie loader */
 .loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   position: fixed;
+  border: 23px solid;
   z-index: 100;
   inset: 0px;
-  animation: loader 4s;
-  animation-fill-mode: forwards;
+  animation: loader 6s ease-in forwards;
 }
 
 .word {
-  object-position: 50% 50%;
+  position: absolute;
+  top: 200px;
+  text-align: center;
+  background: -webkit-linear-gradient(#ff79da, #9356dc, #99e2d0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-size: 80px;
+  width: 600px;
+  height: 100px;
+  animation: word 3s ease-in-out 2s 1 both;
+}
+
+.loader div {
   width: 100px;
   height: 100px;
-  position: fixed;
+  position: absolute;
+  top: 300px;
   right: 50%;
-  bottom: 50%;
-}
-
-.word div {
-  box-sizing: border-box;
-  position: absolute;
-  width: 150%;
-  height: 150%;
-  border: 8px solid transparent;
-  border-top-color: #9356dc;
+  border-top: 20px solid;
   border-radius: 50%;
-  animation: loaderOne 3s linear;
-  animation-fill-mode: forwards;
 }
 
-.word div:nth-child(2) {
-  box-sizing: border-box;
-  position: absolute;
-  width: 150%;
-  height: 150%;
-  border: 8px solid transparent;
-  border-bottom-color: #ff79da;
-  border-radius: 50%;
-  animation: loaderOne 3s linear;
-  animation-fill-mode: forwards;
+.loader .disc-One {
+  transform: skew(-10deg) translateX(50px) rotate(45deg);
+  animation: border-One 1.2s ease infinite;
+  border-color: #9356dc;
 }
 
-.word div:nth-child(3) {
-  border: 8px solid transparent;
-  border-left-color: #99e2d0;
-  width: 100%;
-  height: 100%;
-  top: 25px;
-  left: 25px;
-  animation: loaderOne 6s linear;
-  animation-fill-mode: forwards;
+.loader .disc-Two {
+  transform: skew(-10deg) rotate(165deg);
+  animation: border-Two 1.2s ease infinite;
+  border-color: #99e2d0;
 }
 
-.word div:nth-child(4) {
-  border: 8px solid transparent;
-  border-right-color: #99e2d0;
-  width: 100%;
-  height: 100%;
-  top: 25px;
-  left: 30px;
-  animation: loaderOne 6s linear;
-  animation-fill-mode: forwards;
+.loader .disc-Three {
+  transform: skew(-10deg) translateX(20px) translateY(-50px) rotate(285deg);
+  animation: border-Three 1.2s ease infinite;
+  border-color: #ff79da;
 }
 
 h1 {
@@ -294,7 +294,7 @@ h1 img {
   background-color: #9356dc;
 }
 .choice__btn li {
-  width: 390px;
+  width: 25%;
   counter-increment: step;
   align-items: center;
   padding: 25px;
@@ -328,6 +328,27 @@ h1 img {
 .choice__btn ol li:hover a {
   color: #9356dc;
   transition: ease-in-out 0.6s;
+}
+
+.btn-Order {
+  align-self: center;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 30px;
+  box-shadow: 4px 4px 12px #bfbfbf;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  width: 200px;
+}
+.btn-Order a {
+  color: white;
+}
+
+.btn-Order:hover {
+  opacity: 0.7;
+  box-shadow: -5px 4px 12px #9356dc;
+  border-color: transparent;
+  border-color: 2px solid linear-gradient(#fd8fde, #a777e2);
 }
 
 .browse-restaurants {
@@ -411,21 +432,25 @@ article {
   margin-bottom: 20px;
 }
 
+.heart {
+  cursor: pointer;
+}
+
 .heart__vide {
   position: absolute;
   font-size: 25px;
-  color: #ff79da;
   right: 30px;
   bottom: 30px;
   z-index: 5;
 }
 .heart__vide__vide:hover {
   animation: coeur-vide 1s forwards linear;
-  cursor: pointer;
+  opacity: 0;
 }
 
 .heart__vide:hover + i {
   opacity: 1;
+  cursor: pointer;
   transform: scale(1);
   transition: transform 1s linear;
 }
@@ -474,8 +499,9 @@ main {
 .restaurant-name .heart__vide {
   display: flex;
   white-space: nowrap;
+  top: 40px;
   padding: 10px;
-  font-size: 25px;
+  font-size: 30px;
 }
 .restaurant-name h2 :hover,
 .restaurant-name .heart__vide :hover {
@@ -485,9 +511,9 @@ main {
 
 .restaurant-name .heart__plein {
   position: absolute;
-  font-size: 25px;
+  font-size: 30px;
   right: 40px;
-  bottom: 40px;
+  bottom: 35px;
   opacity: 0;
   background: linear-gradient(#fd8fde, #a777e2);
   -webkit-background-clip: text;
@@ -560,7 +586,8 @@ main {
   padding: 8px 20px;
   margin-left: 20px;
 }
- label {
+
+label {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -568,26 +595,24 @@ main {
   width: auto;
   border-radius: 0px 15px 15px 0px;
 }
+
 label i {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #f2f2f2;
-  width: 100%;
   margin: 0;
   font-size: 18px;
 }
 
-.menu-card__Choice label input + i {
-  display: flex;
-  justify-content: center;
-  cursor: pointer;
+input[type=radio]#btn-check::before {
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  border: 2px solid red;
+  font-weight: 900;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.808);
 }
-
-input {
-  display: none;
-}
-
 
 .menu-card__Choice:hover label {
   background-color: #99e2d0;
@@ -656,8 +681,34 @@ footer {
     margin: 0;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 662px) {
+  .word {
+    line-height: 80px;
+    font-size: 40px;
+    height: 80px;
+  }
+
+  .loader div {
+    width: 50px;
+    height: 50px;
+    border-top: 10px solid;
+    top: 300px;
+    right: 50%;
+  }
+}
+@media screen and (max-width: 1020px) {
   .choice__btn li {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .choice__btn li {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .choice__btn li {
+    width: 90%;
     font-size: 13px;
   }
   .choice__btn li i {
@@ -686,6 +737,16 @@ footer {
   }
 }
 @media screen and (max-width: 420px) {
+  .heart__vide {
+    right: 5px;
+    bottom: 20px;
+  }
+
+  .restaurant-name .heart__plein {
+    right: 15px;
+    bottom: 30px;
+  }
+
   .menu-card {
     justify-content: center;
   }
@@ -720,14 +781,6 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     margin: 0;
-  }
-}
-@media screen and (max-width: 662px) {
-  .word {
-    line-height: 80px;
-    font-size: 40px;
-    width: 300px;
-    height: 80px;
   }
 }
 
