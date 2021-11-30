@@ -132,36 +132,28 @@ label {
   align-items: center;
   color: #f2f2f2;
   width: auto;
+  padding:0 7px;
   border-radius: 0px 15px 15px 0px;
+  cursor: pointer;
 }
-label i {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #f2f2f2;
-  margin: 0;
-  font-size: 18px;
+.Check__checked{
+display: none;
+}
+.icon::before{
+content: "\f058";
+font-family: "Font Awesome 5 Free";
+font-weight: bold;
+font-size: 20px;
 }
 
-input[type="radio"].fas {
-  // display: none;
-}
-input[type="radio"]#btn-check::before {
-  content: "\f058";
-  font-family: "Font Awesome 5 Free";
-  border: 2px solid red;
-  font-weight: 900;
-  font-size: 20px;
-  color: rgba(255, 255, 255, 0.808);
-}
 
 .menu-card__Choice:hover label {
   background-color: #99e2d0;
   width: 150px;
   transition-duration: 1s;
-  animation: check 0.8s ease-in-out reverse;
+  animation: check 0.8s ease-in reverse;
 }
-.menu-card__Choice:hover label + i {
-  transition-duration: 1.5s;
-  animation: valid-check 0.8s ease-in;
-}
+// .menu-card__Choice:hover label + i {
+//   transition-duration: 1.5s;
+//   animation: valid-check 0.8s ease-in;
+// }
