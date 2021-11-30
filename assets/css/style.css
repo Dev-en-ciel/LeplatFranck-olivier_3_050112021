@@ -2,15 +2,15 @@
 /* debut partie loader */
 @keyframes loader {
   0% {
-    background: -webkit-linear-gradient(#9356dc, #99e2d0, #ff79da);
+    background: linear-gradient(#9356dc, #99e2d0, #ff79da);
     opacity: 1;
   }
   50% {
-    background: -webkit-linear-gradient(#9356dc, #99e2d0, #ff79da);
+    background: linear-gradient(#9356dc, #99e2d0, #ff79da);
     opacity: 1;
   }
   100% {
-    background: -webkit-linear-gradient(#9356dc, #99e2d0, #ff79da);
+    background: linear-gradient(#9356dc, #99e2d0, #ff79da);
     opacity: 0;
     visibility: hidden;
   }
@@ -64,7 +64,7 @@
 .btn:hover {
   opacity: 0.8;
   box-shadow: -5px 4px 12px #99e2d0;
-  border-color: 2px solid #99e2d0;
+  border: 2px solid #99e2d0;
   animation: both 1.2s;
 }
 
@@ -118,7 +118,7 @@ a {
   background: -webkit-linear-gradient(#ff79da, #9356dc, #99e2d0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
+  font-family: "Shrikhand", cursive;
   font-size: 80px;
   width: 600px;
   height: 100px;
@@ -233,8 +233,7 @@ h1 img {
 .home__slogan a:hover {
   opacity: 0.7;
   box-shadow: -5px 4px 12px #9356dc;
-  border-color: transparent;
-  border-color: 2px solid linear-gradient(#fd8fde, #a777e2);
+  border: transparent;
 }
 
 .return {
@@ -339,8 +338,7 @@ h1 img {
 .btn-Order:hover {
   opacity: 0.7;
   box-shadow: -5px 4px 12px #9356dc;
-  border-color: transparent;
-  border-color: 2px solid linear-gradient(#fd8fde, #a777e2);
+  border: transparent;
 }
 
 .browse-restaurants {
@@ -662,18 +660,6 @@ footer {
   font-size: 14px;
 }
 
-@media screen and (max-width: 992px) {
-  .contact h2 {
-    font-size: 20px;
-    text-align: start;
-  }
-
-  .about ul {
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0;
-  }
-}
 @media screen and (max-width: 662px) {
   .word {
     line-height: 80px;

@@ -19,6 +19,8 @@ a {
   inset: 0px;
   animation: loader 3s ease-in forwards;
 }
+
+// partie text du loader
 .word {
   position: absolute;
   top: 200px;
@@ -26,13 +28,13 @@ a {
   background: -webkit-linear-gradient(#ff79da, #9356dc, #99e2d0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-transform: uppercase;
   font-family:"Shrikhand", cursive;
   font-size: 80px;
   width: 600px;
   height: 100px;
   animation: word 1s ease-in-out 1s 1 both;
 }
+// partie spinner
 .loader div {
   width: 100px;
   height: 100px;
