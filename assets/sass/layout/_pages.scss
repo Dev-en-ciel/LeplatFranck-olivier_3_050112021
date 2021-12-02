@@ -45,6 +45,7 @@ main {
   opacity: 0;
   background: $color-hover;
   -webkit-background-clip: text;
+  background-clip: t;
   color: transparent;
   transform-origin: bottom;
   transform: scale(0);
@@ -77,44 +78,86 @@ main {
     width: 380px;
     margin: 10px;
   }
-  &__Title {
+  &__Title span {
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    font-family: $font-text;
+    font-size: 14px;
+    margin: 5px;
+  }
+  &__Title :nth-child(1) {
+    font-size: 16px;
+    font-weight: 600;
   }
   &__Choice {
     box-sizing: border-box;
     display: flex;
     width: 100%;
+    // padding: 10px 0;
     box-shadow: $box-shadow;
     border-radius: 15px;
     margin-bottom: 20px;
-    & h4,
-    p {
-      width: auto;
-      font-family: $font-text;
-      font-size: 16px;
-      margin: 10px;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-    & p {
-      padding-top: 8px;
-      font-size: 13px;
-      font-weight: 400;
-    }
-  }
-  &__Price {
-    font-family: $font-text;
-    display: flex;
-    align-items: flex-end;
-    left: 15px;
-    padding: 8px 20px;
-    margin-left: 20px;
   }
 }
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 0 7px;
+  border-radius: 0px 15px 15px 0px;
+  cursor: pointer;
+}
+.menu-card__Title {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+.menu-card__Title span {
+  font-family: $font-text;
+  width: auto;
+  font-size: 14px;
+}
+.menu-card__Price {
+  font-family: $font-text;
+  position: relative;
+  align-self: flex-end;
+  margin-left: auto;
+  padding: 8px 20px;
+  font-family: "Roboto", sans-serif;
+}
+input[type="radio"] {
+  display: none;
+}
+label .fas{
+  border-radius: 0px 15px 15px 0px;
+right: -7px;
+height:78px;
+width: 1px;
+color: transparent;
+}
+input[type="radio"]:checked + .fas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgb(153, 226, 208);
+  width: 10px;
+  border-radius: 0px 15px 15px 0px;
+  transition-duration: 1s;
+  animation: check 0.8s ease-in reverse both;
+}
+.menu-card__Choice:checked .fas {
+  width: 10px;
+  transition-duration: 1s;
+  animation: check 0.8s ease-in-out reverse both;
+}
+
 // animation des boutons
 .menu-card__Starter {
   animation: Menu-Card 2s ease-in-out 1.2s normal both;
@@ -125,32 +168,3 @@ main {
 .menu-card__Dessert {
   animation: Menu-Card 3s ease-in-out 3s normal both;
 }
-
-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #f2f2f2;
-  width: auto;
-  padding:0 7px;
-  border-radius: 0px 15px 15px 0px;
-  cursor: pointer;
-}
-.Check__checked{
-display: none;
-}
-.icon::before{
-content: "\f058";
-font-family: "Font Awesome 5 Free";
-font-weight: bold;
-font-size: 20px;
-}
-
-
-.menu-card__Choice:hover label {
-  background-color: #99e2d0;
-  width: 150px;
-  transition-duration: 1s;
-  animation: check 0.8s ease-in reverse;
-}
-

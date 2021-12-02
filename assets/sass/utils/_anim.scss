@@ -59,14 +59,14 @@
   }
 }
 // animation des bouton menu
-@keyframes Menu-Card {
-  0%{
-transform:scale(0);
- }
-  100%{
-transform:scale(1);
-  }
-}
+// @keyframes Menu-Card {
+//   0%{
+// transform:scale(0);
+//  }
+//   100%{
+// transform:scale(1);
+//   }
+// }
 
 
 
@@ -81,10 +81,11 @@ transform:scale(1);
 /* animation for checks */
 @keyframes check {
   0% {
-    width: 150px;
+  color: white;
+  width: 150px;
   }
   100% {
-    width: 20px;
+  width: 20px;
   }
 }
 
