@@ -47,40 +47,41 @@
           </div>
 
          <!-- partie une bloc Entrées -->
-          <div class="menu-card">
-            <div class="menu-card__Starter">       
-              <h3>Entrées</h3>
-              <div class="menu-card__Choice">
-                <div class="menu-card__Title">
-                  <h4>Tartare de poulpe acidulé</h4>
-                  <p>Au zestes d'orange</p>
+          <section class="bloc-menu-Choice">
+            <form class="menu-card" action="by-menu.php" method="post" >
+              <div class="menu-card__Starter">       
+                <h3>Entrées</h3>
+              <div class="menu-bloc__Starter">
+                <label for="Starter-One" class="menu-card__Choice">
+                  <div class="menu-card__Title">
+                  <span>Tartare de poulpe acidulé</span>
+                  <span>Au zestes d'orange</span>
                 </div>
-                 <div class="menu-card__Price">25€</div>              
-                <label for="btn-Valid" class="Check">
-                  <input type="radio" name="btn-Check" id="btn-Valid" class="Check__checked"/>
-                  <div class="icon"></di>
+                 <span class="menu-card__Price">25€</span>              
+                  <input type="radio" name="Starter" id="Starter-One" class="Check__checked"/>
+                  <span class="fas fa-check-circle"></span>
                 </label>
               </div>
-              <div class="menu-card__Choice">
-                <div class="menu-card__Title">
-                  <h4>Velouté de légumes d'antan</h4>
-                  <p>Carotte, panais, topinambour</p>
+              <div class="menu-bloc__Starter">
+                <label for="Starter-Two" class="menu-card__Choice">
+                  <div class="menu-card__Title">
+                  <sapn>Velouté de légumes d'antan</sapn>
+                  <span>Carotte, panais, topinambour</span>
                 </div>
-                <div class="menu-card__Price">35€</div>
-                <label for="btn-Valid" class="Check">
-                  <input type="radio" name="btn-Check" id="btn-Valid" class="Check__checked"/>
-                  <div class="icon"></div>
+                <span class="menu-card__Price">35€</span>
+                <input type="radio" name="Starter" id="Starter-Two" class="Check__checked"/>
+                  <span class="fas fa-check-circle"></span>
                 </label>
               </div>
-              <div class="menu-card__Choice">
-                <div class="menu-card__Title">
-                  <h4>Soupe à l'oignon</h4>
-                  <p>Revisitée</p>
+              <div class="menu-bloc__Starter">
+                <label for="Starter-Three" class="menu-card__Choice">
+                  <div class="menu-card__Title">
+                  <span>Soupe à l'oignon</span>
+                  <span>Revisitée</span>
                 </div>
                 <div class="menu-card__Price">20€</div>
-                <label for="btn-Valid" class="Check">
-                  <input type="radio" name="btn-Check" id="btn-Valid" class="Check__checked"/>
-                  <div class="icon"></div>
+                <input type="radio" name="Starter" id="Starter-Three" class="Check__checked"/>
+                  <span class="fas fa-check-circle"></span>
                 </label>
               </div>
             </div>
@@ -89,37 +90,38 @@
             <!-- debut partie Plats -->
             <div class="menu-card__Dishes">
               <h3>plats</h3>
-              <div class="menu-card__Choice">
-                <div class="menu-card__Title">
-                  <h4>Coquilles Saint-Jaques</h4>
-                  <p>Accompagné d'une purée de panais</p>
+              <div class="menu-bloc__Dishes">
+                <label for="Dishes-One" class="menu-card__Choice">
+                  <div class="menu-card__Title">
+                  <span>Coquilles Saint-Jaques</span>
+                  <span>Accompagné d'une purée de panais</span>
                 </div>
-                <div class="menu-card__Price">40€</div>
-                <label for="btn-Valid" class="Check">
-                  <input type="radio" name="btn-Check" id="btn-Valid" class="Check__checked"/>
-                  <div class="icon"></div>
+                <span class="menu-card__Price">40€</span>
+                <input type="radio" name="Dishes" id="Dishes-One" class="Check__checked"/>
+                  <span class="fas fa-check-circle"></span>
                 </label>
               </div>
-              <div class="menu-card__Choice">
-                <div class="menu-card__Title">
-                  <h4>Magret de canard</h4>
-                  <p>Et parmentier de pommes de terre</p>
+              <div class="menu-bloc__Dishes">
+                <label for="Dishes-Two" class="menu-card__Choice">
+                  <div class="menu-card__Title">
+                  <span>Magret de canard</span>
+                  <span>Et parmentier de pommes de terre</span>
                 </div>
-                <div class="menu-card__Price">35€</div>
+                <span class="menu-card__Price">35€</span>
                 <label for="btn-Valid" class="Check">
-                  <input type="radio" name="btn-Check" id="btn-Valid" class="Check__checked"/>
-                  <div class="icon"></div>
+                 <input type="radio" name="Dishes" id="Dishes-Two" class="Check__checked"/>
+                  <span class="fas fa-check-circle"></span>
                 </label>
               </div>
-              <div class="menu-card__Choice">
-                <div class="menu-card__Title">
-                  <h4>Pigeonneau d'Ille-et-Vilaine</h4>
-                  <p>Sur son lit de gnoccis aux légumes</p>
+              <div class="menu-bloc__Dishes">
+                <label for="Dishes-Three" class="menu-card__Choice">
+                  <div class="menu-card__Title">
+                  <span>Pigeonneau d'Ille-et-Vilaine</span>
+                  <span>Sur son lit de gnoccis aux légumes</span>
                 </div>
-                <div class="menu-card__Price">44€</div>
-                <label for="btn-Valid" class="Check">
-                  <input type="radio" name="btn-Check" id="btn-Valid" class="Check__checked"/>
-                  <div class="icon"></div>
+                <span class="menu-card__Price">44€</span>
+                  <input type="radio" name="Dishes" id="Dishes-Three" class="Check__checked"/>
+                  <span class="fas fa-check-circle"></span>
                 </label>
               </div>
             </div>
@@ -128,45 +130,43 @@
             <!-- debut partie Dessert -->
             <div class="menu-card__Dessert">
               <h3>dessert</h3>
-              <div class="menu-card__Choice">
-                <div class="menu-card__Title">
-                  <h4>Pétales de violettes glacés</h4>
-                  <p>Et purée de noisettes</p>
+              <div class="menu-bloc__Dessert">
+                <label for="Dessert-One" class="menu-card__Choice">
+                  <div class="menu-card__Title">
+                  <span>Pétales de violettes glacés</span>
+                  <span>Et purée de noisettes</span>
                 </div>
-                <div class="menu-card__Price">18€</div>
-                <label for="btn-Valid" class="Check">
-                  <input type="radio" name="btn-Check" id="btn-Valid" class="Check__checked"/>
-                  <div class="icon"></div>
+                <span class="menu-card__Price">18€</span>
+                <input type="radio" name="choice-Three" id="Dessert-One" class="Check__checked"/>
+                  <span class="fas fa-check-circle"></span>
                 </label>
               </div>
-              <div class="menu-card__Choice">
-                <div class="menu-card__Title">
-                 <h4>Fondant au chocolat</h4>
-                  <p>Revisité</p>
+              <div class="menu-bloc__Dessert">
+                <label for="Dessert__Two" class="menu-card__Choice">
+                  <div class="menu-card__Title">
+                  <span>Fondant au chocolat</span>
+                  <span>Revisité</span>
                 </div>
-                <div class="menu-card__Price">22€</div>
-                <label for="btn-Valid" class="Check">
-                  <input type="radio" name="btn-Check" id="btn-Valid" class="Check__checked"/>
-                  <div class="icon"></div>
+                <span class="menu-card__Price">22€</span>
+                  <input type="radio" name="choice-Three" id="Dessert__Two" class="Check__checked"/>
+                <span class="fas fa-check-circle"></span>
                 </label>
               </div>
-              <div class="menu-card__Choice">
-                <div class="menu-card__Title">
-                  <h4>Millefeuille croustillant</h4>
-                  <p>Myrtilles et pâte d'amande</p>
+              <div class="menu-bloc__Dessert">
+                <label for="Dessert__Three" class="menu-card__Choice">
+                  <div class="menu-card__Title">
+                  <span>Millefeuille croustillant</span>
+                  <span>Myrtilles et pâte d'amande</span>
                 </div>
-                <div class="menu-card__Price">23€</div>
-                <label for="btn-Valid" class="Check">
-                  <input type="radio" name="btn-Check" id="btn-Valid" class="Check__checked"/>
-                  <div class="icon"></div>
+                <span class="menu-card__Price">23€</span>
+                <input type="radio" name="choice-Three" id="Dessert__Three" class="Check__checked"/>
+                  <span class="fas fa-check-circle"></span>
                 </label>
               </div>
             </div>
             <!-- fin de la partie dessert -->
-          </div>
-          <div class="btn-Order">
-            <a href="#">Commander</a>
-          </div>
+            <input type="submit" class="btn-Order" value="commander"/>
+          </form>
           <!-- fin formulaire -->
           <!-- fin du bloc menu-card -->
         </section>
@@ -189,7 +189,7 @@
                 <a href="#"> Mentions légales </a>
               </li>
               <li>
-                <a href="mailto:ohmyfood@fictif.com">Contact</a>
+                <a href="mailto:fictif@ohmyfood.com">Contact</a>
               </li>
             </ul>
           </div>

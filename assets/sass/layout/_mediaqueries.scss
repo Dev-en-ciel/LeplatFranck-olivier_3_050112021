@@ -19,9 +19,9 @@
     width: 40%;
   }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1040px) {
   .choice__btn li {
-    width: 65%;
+    width: 90%;
   }
 }
 
@@ -51,7 +51,7 @@
   .card {
     width: 90%;
     & img {
-      height: 170px;
+      height: 200px;
     }
     .heart__plein {
       right: 30px;
@@ -60,20 +60,31 @@
 }
 
 // queries pour les boutons choix menus
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 1200px) {
   .restaurant-name h2{
-  font-size: 28px;
+  margin-left: 25px;
   }
   .restaurant-name .heart__vide {
     right: 20px;
-    top: 43px;
+    top: 42px;
     padding: 0;
   }
  .restaurant-name .heart__plein {
     right: 20px;
     top: 40px;
   }
+  .menu-card__Starter,
+  .menu-card__Dishes,
+  .menu-card__Dessert {
+    justify-content: center;
+    width: 90%;
+  }
 
+}
+@media screen and (max-width: 420px) {
+  .restaurant-name h2{
+  font-size: 25px;
+  }
   .menu-card {
     justify-content: center;
   }
@@ -81,7 +92,7 @@
   .menu-card__Dishes,
   .menu-card__Dessert {
     justify-content: center;
-    width: 295px;
+    width: 90%;
   }
   .menu-card__Choice h4 {
     font-size: 14px;
