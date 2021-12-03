@@ -50,25 +50,28 @@
           </div>
 
           <!-- partie une bloc Entrées -->
-          <form class="menu-card">
+        <section class="bloc-menu-Choice">
+          <form class="menu-card" action="by-menu.php" method="post" >
             <div class="menu-card__Starter">       
               <h3>Entrées</h3>
+              <div class="menu-bloc__Stater">
                 <label for="Starter-One" class="menu-card__Choice">
                   <div class="menu-card__Title">
                     <span>Fricassée d'escargot</span>
                     <span>Au piment d'espelette</span>
                   </div>
                   <span class="menu-card__Price">25€</span>              
-                  <input type="radio" name="choice-One" id="Starter-One" class="Check__checked"/>
+                  <input type="radio" name="Starter-One" id="Starter-One" class="Check__checked"/>
                   <span class="fas fa-check-circle"></span>
                 </label>
+              </div>
                 <label for="Starter-Two" class="menu-card__Choice">
                   <div class="menu-card__Title">
                     <span>Foie gras de canard mi-cuit</span>
                     <span>Et ses copeaux de truffe noire</span>
                   </div>
                   <span class="menu-card__Price">35€</span>
-                  <input type="radio" name="choice-One" id="Starter-Two" class="Check__checked"/>
+                  <input type="radio" name="Starter-Two" id="Starter-Two" class="Check__checked"/>
                   <span class="fas fa-check-circle"></span>
                 </label>
                 <label for="Starter-Three" class="menu-card__Choice">
@@ -148,8 +151,9 @@
                 </label>
             </div>
             <!-- fin de la partie dessert -->
+            <input type="submit" class="btn-Order" value="commander"/>
           </form>
-          <input type="submit" class="btn-Order" value="commander"></input>
+        </section>
           <!-- fin formulaire -->
           <!-- fin du bloc menu-card -->
         </section>
