@@ -56,7 +56,7 @@
 @keyframes check {
   0% {
     color: white;
-    width: 100px;
+    width: 150px;
   }
   100% {
     width: 30px;
@@ -178,6 +178,10 @@ h1 img {
   margin: 0;
 }
 
+input[type=search]:focus {
+  outline: none;
+}
+
 ::placeholder {
   color: black;
   font-size: 18px;
@@ -218,8 +222,9 @@ h1 img {
 }
 .home__slogan a:hover {
   opacity: 0.7;
-  box-shadow: -5px 4px 12px #9356dc;
+  box-shadow: 3px 4px 15px 1px #9356dc;
   border: transparent;
+  transition: ease-in 0.5s;
 }
 
 .return {
@@ -323,8 +328,9 @@ h1 img {
 
 .btn-Order:hover {
   opacity: 0.7;
-  box-shadow: -5px 4px 12px #9356dc;
+  box-shadow: 3px 4px 15px 1px #9356dc;
   border: transparent;
+  transition: ease-in 0.5s;
 }
 
 .browse-restaurants {
@@ -374,7 +380,10 @@ article {
   width: 100%;
   height: 94%;
   border-radius: 20px 20px 20px 20px;
-  box-shadow: 4px 10px 8px rgba(107, 107, 107, 0.322);
+  box-shadow: 4px 10px 8px 1px rgba(107, 107, 107, 0.486);
+}
+.card a:hover {
+  box-shadow: 4px 10px 8px 1px #6b6b6b;
 }
 .card__new {
   position: absolute;
@@ -487,17 +496,16 @@ main {
 
 .restaurant-name .heart__plein {
   position: absolute;
-  border: 1px solid green;
   font-size: 30px;
   right: 40px;
-  bottom: 35px;
+  bottom: 45px;
   opacity: 0;
   background: linear-gradient(#fd8fde, #a777e2);
   -webkit-background-clip: text;
-  background-clip: t;
+  background-clip: text;
   color: transparent;
-  transform-origin: bottom;
   transform: scale(0);
+  transform-origin: bottom;
 }
 
 /* carte de menu */
@@ -546,7 +554,6 @@ main {
   display: flex;
   width: auto;
   box-shadow: 4px 4px 12px #bfbfbf;
-  border-radius: 15px;
   margin-bottom: 25px;
 }
 
@@ -567,12 +574,10 @@ main {
 }
 
 .menu-card__Choice {
-  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 0 7px;
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 15px 15px 15px 15px;
   cursor: pointer;
 }
 
@@ -594,11 +599,11 @@ main {
 
 .menu-card__Price {
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
   position: relative;
   align-self: flex-end;
   margin-left: auto;
   padding: 8px 20px;
-  font-family: "Roboto", sans-serif;
 }
 
 input[type=radio] {
@@ -609,7 +614,6 @@ label .fas {
   border-radius: 0px 15px 15px 0px;
   right: -7px;
   height: 78px;
-  width: 1px;
   color: transparent;
 }
 
@@ -618,15 +622,14 @@ input[type=radio]:checked + .fas {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #99e2d0;
   width: 10px;
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 0px 12px 12px 0px;
+  background-color: #99e2d0;
   transition-duration: 1s;
   animation: check 0.8s ease-in reverse both;
 }
 
 .menu-card__Choice:checked .fas {
-  width: 10px;
   transition-duration: 1s;
   animation: check 0.8s ease-in-out reverse both;
 }
@@ -771,6 +774,20 @@ footer {
     justify-content: center;
     width: 90%;
   }
+
+  .menu-card h3 {
+    width: 5%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .menu-card h3 {
+    width: 8%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .menu-card h3 {
+    width: 14%;
+  }
 }
 @media screen and (max-width: 420px) {
   .restaurant-name h2 {
@@ -780,20 +797,15 @@ footer {
   .menu-card {
     justify-content: center;
   }
+  .menu-card h3 {
+    width: 16%;
+  }
 
   .menu-card__Starter,
 .menu-card__Dishes,
 .menu-card__Dessert {
     justify-content: center;
     width: 90%;
-  }
-
-  .menu-card__Choice h4 {
-    font-size: 14px;
-  }
-
-  .menu-card__Choice p {
-    font-size: 12px;
   }
 
   .menu-card__Price {

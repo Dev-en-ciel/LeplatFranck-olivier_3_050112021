@@ -27,6 +27,7 @@ h1 {
     padding: 10px;
     background-color: transparent;
   }
+  
   &__location i {
     color: rgb(2, 2, 2);
     font-size: 18px;
@@ -37,7 +38,9 @@ h1 {
     margin: 0;
   }
 }
-
+input[type=search]:focus{
+outline: none;
+}
 ::placeholder {
   color: black;
   font-size: 18px;
@@ -86,6 +89,6 @@ h1 {
 }
 .ban img {
   width: 100%;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
 }

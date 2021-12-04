@@ -12,6 +12,7 @@
 
 @mixin btn-hover {
   opacity: 0.7;
-  box-shadow: -5px 4px 12px #9356dc;
+  box-shadow: 3px 4px 15px 1px #9356dc;
   border: transparent;
+  transition: ease-in 0.5s;
 }

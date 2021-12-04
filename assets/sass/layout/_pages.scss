@@ -10,12 +10,12 @@ main {
   display: flex;
   flex-direction: column;
   position: relative;
-  bottom: 35px;
+  bottom: 30px;
 }
 /* titre et icon */
 .restaurant-name {
   position: relative;
-  bottom: 40px;
+  bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,7 +29,7 @@ main {
     display: flex;
     white-space: nowrap;
     top: 40px;
-    padding: 10px;
+    padding: 12px;
     font-size: 30px;
     :hover {
       animation: coeur-vide 1s forwards linear;
@@ -41,14 +41,14 @@ main {
   position: absolute;
   font-size: 30px;
   right: 40px;
-  bottom: 35px;
+  bottom: 45px;
   opacity: 0;
   background: $color-hover;
   -webkit-background-clip: text;
-  background-clip: t;
+  background-clip: text;
   color: transparent;
-  transform-origin: bottom;
   transform: scale(0);
+  transform-origin: bottom;
 }
 /* carte de menu */
 .menu-card {
@@ -57,6 +57,7 @@ main {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding-bottom: 50px;
   width: 100%;
   h3 {
     font-family: $font-text;
@@ -75,7 +76,7 @@ main {
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 380px;
+    width: 28%;
     margin: 10px;
   }
   &__Title span {
@@ -94,24 +95,33 @@ main {
   &__Choice {
     box-sizing: border-box;
     display: flex;
-    width: 100%;
-    // padding: 10px 0;
+    width: auto;
     box-shadow: $box-shadow;
-    border-radius: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
-label {
+.bloc-menu-Choice{
   display: flex;
+}
+.menu-bloc__Starter {
+  width: 100%;
+}
+.menu-bloc__Dishes {
+  width: 100%;
+}
+.menu-bloc__Dessert {
+  width: 100%;
+}
+.menu-card__Choice {
   justify-content: center;
   align-items: center;
-  width: auto;
   padding: 0 7px;
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 15px 15px 15px 15px;
   cursor: pointer;
 }
 .menu-card__Title {
   display: flex;
+  box-sizing: border-box;
   flex-direction: column;
   overflow: hidden;
   white-space: nowrap;
@@ -125,35 +135,33 @@ label {
 }
 .menu-card__Price {
   font-family: $font-text;
+  font-weight: 600;
   position: relative;
   align-self: flex-end;
   margin-left: auto;
   padding: 8px 20px;
-  font-family: "Roboto", sans-serif;
 }
 input[type="radio"] {
   display: none;
 }
-label .fas{
+label .fas {
   border-radius: 0px 15px 15px 0px;
-right: -7px;
-height:78px;
-width: 1px;
-color: transparent;
+  right: -7px;
+  height: 78px;
+  color: transparent;
 }
 input[type="radio"]:checked + .fas {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: rgb(153, 226, 208);
   width: 10px;
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 0px 12px 12px 0px;
+  background-color: rgb(153, 226, 208);
   transition-duration: 1s;
   animation: check 0.8s ease-in reverse both;
 }
 .menu-card__Choice:checked .fas {
-  width: 10px;
   transition-duration: 1s;
   animation: check 0.8s ease-in-out reverse both;
 }
@@ -167,4 +175,9 @@ input[type="radio"]:checked + .fas {
 }
 .menu-card__Dessert {
   animation: Menu-Card 3s ease-in-out 3s normal both;
+}
+
+.btn-Order {
+  border: none;
+  color: white;
 }
