@@ -53,33 +53,40 @@
     & img {
       height: 200px;
     }
-    .heart__plein {
-      right: 30px;
-    }
   }
 }
 
 // queries pour les boutons choix menus
 @media screen and (max-width: 1200px) {
-  .restaurant-name h2{
-  margin-left: 25px;
-  }
-  .restaurant-name .heart__vide {
-    right: 20px;
-    top: 42px;
-    padding: 0;
-  }
- .restaurant-name .heart__plein {
-    right: 20px;
-    top: 40px;
-  }
+
   .menu-card__Starter,
   .menu-card__Dishes,
   .menu-card__Dessert {
     justify-content: center;
     width: 90%;
   }
-
+  .menu-card h3{
+  width: 5%;
+  }
+}
+@media screen and (min-width:1600px) {
+  .menu-card__Starter,
+  .menu-card__Dishes,
+  .menu-card__Dessert {
+    justify-content: center;
+    width: 32%;
+  }
+  
+}
+@media screen and (max-width: 992px) {
+  .menu-card h3{
+  width: 8%;
+  }
+}
+@media screen and( max-width:550px) {
+   .menu-card h3{
+  width: 14%;
+  }
 }
 @media screen and (max-width: 420px) {
   .restaurant-name h2{
@@ -87,6 +94,16 @@
   }
   .menu-card {
     justify-content: center;
+    & h3{
+    width: 16%;
+    }
+  }
+  .restaurant-name .heart__vide {
+  font-size: 20px;
+
+  }
+ .restaurant-name .heart__plein {
+    font-size: 20px;
   }
   .menu-card__Starter,
   .menu-card__Dishes,
@@ -94,12 +111,7 @@
     justify-content: center;
     width: 90%;
   }
-  .menu-card__Choice h4 {
-    font-size: 14px;
-  }
-  .menu-card__Choice p {
-    font-size: 12px;
-  }
+
   .menu-card__Price {
     font-size: 12px;
     padding: 8px 5px;
