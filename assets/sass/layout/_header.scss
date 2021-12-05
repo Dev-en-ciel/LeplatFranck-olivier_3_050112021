@@ -40,6 +40,10 @@ h1 {
 }
 input[type=search]:focus{
 outline: none;
+font-family: $font-text;
+font-size: 15px;
+font-weight: 500;
+text-transform: capitalize;
 }
 ::placeholder {
   color: black;

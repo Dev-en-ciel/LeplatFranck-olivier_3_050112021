@@ -58,6 +58,16 @@
     opacity: 0;
   }
 }
+// animation plus (optionnelle)new.
+@keyframes new-restaurant{
+from{
+box-shadow:0 0 0 -3px rgb(0, 135, 101),0 0 0 0 hsl(165, 100%, 26%)
+}
+to {
+box-shadow:0 0 0 2px hsla(0,135,101,0),0 0 0 4px rgb(24, 197, 154)
+}
+}
+
 // animation des bouton menu
 @keyframes Menu-Card {
   0%{
@@ -78,15 +88,13 @@ transform:scale(1);
   width: 30px;
   }
 }
-
-@keyframes valid-Check {
-  from {
-    opacity: 0.5;
-    transform: rotate(0deg);
+@keyframes Check-Valid {
+  0% {
+  transform: rotate(0deg);
   }
-  to {
-    opacity: 1;
-    transform: rotate(360deg);
+  100% {
+  transform: rotate(360deg);
   }
 }
+
 /*# sourceMappingURL=anim.css.map */

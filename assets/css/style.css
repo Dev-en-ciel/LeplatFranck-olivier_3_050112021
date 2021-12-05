@@ -52,6 +52,14 @@
     opacity: 0;
   }
 }
+@keyframes new-restaurant {
+  from {
+    box-shadow: 0 0 0 -3px #008765, 0 0 0 0 #008563;
+  }
+  to {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0), 0 0 0 4px #18c59a;
+  }
+}
 @keyframes Menu-Card {
   0% {
     transform: scale(0);
@@ -70,13 +78,11 @@
     width: 30px;
   }
 }
-@keyframes valid-Check {
-  from {
-    opacity: 0.5;
+@keyframes Check-Valid {
+  0% {
     transform: rotate(0deg);
   }
-  to {
-    opacity: 1;
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -188,6 +194,10 @@ h1 img {
 
 input[type=search]:focus {
   outline: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 ::placeholder {
@@ -402,6 +412,7 @@ article {
   top: 15px;
   padding: 6px 11px;
   border-radius: 3px;
+  animation: new-restaurant 1.5s ease-out infinite;
 }
 .card__info {
   display: flex;
@@ -467,34 +478,33 @@ main {
   padding: 0;
 }
 
-/* contenue de la page */
+/* contenu de la page */
 .bloc-menu {
   display: flex;
   flex-direction: column;
   position: relative;
-  bottom: 30px;
+  bottom: 35px;
 }
 
-/* titre et icon */
+/* titre et icons */
 .restaurant-name {
   position: relative;
   bottom: 30px;
   display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
   border-radius: 50px 50px 0px 0px;
-  padding-top: 10px;
   font-family: "Shrikhand", cursive;
   background-color: #f6f6f6;
   width: 100%;
+}
+.restaurant-name h2 {
+  margin-left: 20px;
 }
 .restaurant-name h2,
 .restaurant-name .heart__vide {
   display: flex;
   white-space: nowrap;
   align-self: center;
-  padding: 10px;
+  padding: 5px;
   font-size: 30px;
 }
 .restaurant-name h2 :hover,
@@ -565,6 +575,11 @@ main {
   width: auto;
   box-shadow: 4px 4px 12px #bfbfbf;
   margin-bottom: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7px;
+  border-radius: 15px 15px 15px 15px;
+  cursor: pointer;
 }
 
 .bloc-menu-Choice {
@@ -581,14 +596,6 @@ main {
 
 .menu-bloc__Dessert {
   width: 100%;
-}
-
-.menu-card__Choice {
-  justify-content: center;
-  align-items: center;
-  padding: 0 7px;
-  border-radius: 15px 15px 15px 15px;
-  cursor: pointer;
 }
 
 .menu-card__Title {
@@ -639,13 +646,12 @@ input[type=radio]:checked + .fas {
   animation: check 0.8s ease-in reverse both;
 }
 
-.menu-card__Choice:checked .fas {
-  transition-duration: 1s;
-  animation: check 0.8s ease-in-out reverse both;
+span .fas {
+  animation: Check-Valid 0.8s both;
 }
 
 .menu-card__Starter {
-  animation: Menu-Card 2s ease-in-out 1.2s normal both;
+  animation: Menu-Card 1s ease-in-out 1.2s normal both;
 }
 
 .menu-card__Dishes {

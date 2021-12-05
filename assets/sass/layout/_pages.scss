@@ -3,34 +3,33 @@ main {
   margin: 0;
   padding: 0;
 }
-// style pour le pages menu
+// style pour la pages menu
 
-/* contenue de la page */
+/* contenu de la page */
 .bloc-menu {
   display: flex;
   flex-direction: column;
   position: relative;
-  bottom: 30px;
+  bottom: 35px;
 }
-/* titre et icon */
+/* titre et icons */
 .restaurant-name {
   position: relative;
   bottom: 30px;
   display: flex;
-  justify-content: space-between;
-  align-content:center ;
-  align-items: center;
   border-radius: 50px 50px 0px 0px;
-  padding-top: 10px;
   font-family: $font-title;
   background-color: #f6f6f6;
   width: 100%;
+  & h2{ 
+  margin-left: 20px;
+  }
   h2,
   .heart__vide {
     display: flex;
     white-space: nowrap;
     align-self: center;
-    padding: 10px;
+    padding: 5px;
     font-size: 30px;
     :hover {
       animation: coeur-vide 1s forwards linear;
@@ -100,9 +99,14 @@ main {
     width: auto;
     box-shadow: $box-shadow;
     margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 7px;
+    border-radius: 15px 15px 15px 15px;
+    cursor: pointer;
   }
 }
-.bloc-menu-Choice{
+.bloc-menu-Choice {
   display: flex;
 }
 .menu-bloc__Starter {
@@ -113,13 +117,6 @@ main {
 }
 .menu-bloc__Dessert {
   width: 100%;
-}
-.menu-card__Choice {
-  justify-content: center;
-  align-items: center;
-  padding: 0 7px;
-  border-radius: 15px 15px 15px 15px;
-  cursor: pointer;
 }
 .menu-card__Title {
   display: flex;
@@ -163,14 +160,12 @@ input[type="radio"]:checked + .fas {
   transition-duration: 1s;
   animation: check 0.8s ease-in reverse both;
 }
-.menu-card__Choice:checked .fas {
-  transition-duration: 1s;
-  animation: check 0.8s ease-in-out reverse both;
+span .fas{
+animation: Check-Valid 0.8s both;
 }
-
 // animation des boutons
 .menu-card__Starter {
-  animation: Menu-Card 2s ease-in-out 1.2s normal both;
+  animation: Menu-Card 1s ease-in-out 1.2s normal both;
 }
 .menu-card__Dishes {
   animation: Menu-Card 2s ease-in-out 2s normal both;
