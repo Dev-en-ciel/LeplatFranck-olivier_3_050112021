@@ -41,8 +41,8 @@ main {
   position: absolute;
   align-self: center;
   font-size: 30px;
-  right: 40px;
-  bottom: 39px;
+  right: 35px;
+  bottom: 35px;
   opacity: 0;
   background: $color-hover;
   -webkit-background-clip: text;
@@ -160,9 +160,7 @@ input[type="radio"]:checked + .fas {
   transition-duration: 1s;
   animation: check 0.8s ease-in reverse both;
 }
-span .fas{
-animation: Check-Valid 0.8s both;
-}
+
 // animation des boutons
 .menu-card__Starter {
   animation: Menu-Card 1s ease-in-out 1.2s normal both;

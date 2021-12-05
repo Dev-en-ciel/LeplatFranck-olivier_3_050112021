@@ -54,10 +54,10 @@
 }
 @keyframes new-restaurant {
   from {
-    box-shadow: 0 0 0 -3px #008765, 0 0 0 0 #008563;
+    box-shadow: 0 0 0 -3px rgba(0, 135, 101, 0.295), 0 0 0 0 #008563;
   }
   to {
-    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0), 0 0 0 4px #18c59a;
+    box-shadow: 0 0 0 2px rgba(0, 135, 101, 0), 0 0 0 4px #18c59a;
   }
 }
 @keyframes Menu-Card {
@@ -76,14 +76,6 @@
   }
   100% {
     width: 30px;
-  }
-}
-@keyframes Check-Valid {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 /*# sourceMappingURL=anim.css.map */
@@ -517,8 +509,8 @@ main {
   position: absolute;
   align-self: center;
   font-size: 30px;
-  right: 40px;
-  bottom: 39px;
+  right: 35px;
+  bottom: 35px;
   opacity: 0;
   background: linear-gradient(#fd8fde, #a777e2);
   -webkit-background-clip: text;
@@ -644,10 +636,6 @@ input[type=radio]:checked + .fas {
   background-color: #99e2d0;
   transition-duration: 1s;
   animation: check 0.8s ease-in reverse both;
-}
-
-span .fas {
-  animation: Check-Valid 0.8s both;
 }
 
 .menu-card__Starter {

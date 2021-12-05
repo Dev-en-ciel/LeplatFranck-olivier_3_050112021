@@ -61,10 +61,10 @@
 // animation plus (optionnelle)new.
 @keyframes new-restaurant{
 from{
-box-shadow:0 0 0 -3px rgb(0, 135, 101),0 0 0 0 hsl(165, 100%, 26%)
+box-shadow:0 0 0 -3px rgba(0, 135, 101, 0.295),0 0 0 0 rgb(0, 133, 99)
 }
 to {
-box-shadow:0 0 0 2px hsla(0,135,101,0),0 0 0 4px rgb(24, 197, 154)
+box-shadow:0 0 0 2px rgb(0,135,101,0),0 0 0 4px rgb(24, 197, 154)
 }
 }
 
@@ -88,13 +88,6 @@ transform:scale(1);
   width: 30px;
   }
 }
-@keyframes Check-Valid {
-  0% {
-  transform: rotate(0deg);
-  }
-  100% {
-  transform: rotate(360deg);
-  }
-}
+
 
 /*# sourceMappingURL=anim.css.map */
