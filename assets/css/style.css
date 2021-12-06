@@ -162,21 +162,22 @@ h1 img {
 }
 .home__location {
   display: flex;
+  align-content: center;
   justify-content: center;
+  width: 100%;
   padding: 10px;
-  padding-left: 50px;
   background-color: #eaeaea;
   box-shadow: 4px 4px 12px #bfbfbf;
   font-size: 15px;
 }
 .home__cities {
   border: none;
-  padding: 10px;
   background-color: transparent;
+  padding: 10px;
 }
 .home__location i {
   color: #020202;
-  font-size: 18px;
+  font-size: 17px;
 }
 .home__location p {
   font-family: "Roboto", sans-serif;
@@ -185,8 +186,8 @@ h1 img {
 }
 
 input[type=search]:focus {
+  box-sizing: border-box;
   outline: none;
-  border: 1px transparent;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -194,8 +195,10 @@ input[type=search]:focus {
 }
 
 ::placeholder {
+  border: 1px transparent;
   color: black;
-  font-size: 15px;
+  font-size: 16px;
+  width: 100%;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
 }
