@@ -40,14 +40,15 @@ h1 {
 }
 input[type=search]:focus{
 outline: none;
+border: 1px transparent;
 font-family: $font-text;
 font-size: 15px;
-font-weight: 500;
+font-weight: bold;
 text-transform: capitalize;
 }
 ::placeholder {
   color: black;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   font-family: $font-text;
 }
