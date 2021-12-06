@@ -165,19 +165,20 @@ h1 img {
   align-content: center;
   justify-content: center;
   width: 100%;
-  padding: 10px;
   background-color: #eaeaea;
   box-shadow: 4px 4px 12px #bfbfbf;
   font-size: 15px;
 }
 .home__cities {
   border: none;
+  width: 250px;
+  height: auto;
   background-color: transparent;
   padding: 10px;
 }
 .home__location i {
   color: #020202;
-  font-size: 17px;
+  font-size: 18px;
 }
 .home__location p {
   font-family: "Roboto", sans-serif;
@@ -197,10 +198,15 @@ input[type=search]:focus {
 ::placeholder {
   border: 1px transparent;
   color: black;
-  font-size: 16px;
+  font-size: 15px;
   width: 100%;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
+}
+
+.search-cities {
+  padding: 10px;
+  margin-left: 90px;
 }
 
 .home__slogan {
