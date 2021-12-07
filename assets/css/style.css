@@ -52,14 +52,6 @@
     opacity: 0;
   }
 }
-@keyframes new-restaurant {
-  from {
-    box-shadow: 0 0 0 -2px rgba(0, 135, 101, 0.295), 0 0 0 0 #008563;
-  }
-  to {
-    box-shadow: 0 0 0 3px rgba(0, 135, 101, 0), 0 0 0 4px #18c59a;
-  }
-}
 @keyframes Menu-Card {
   0% {
     transform: scale(0);
@@ -152,32 +144,26 @@ h1 {
 }
 h1 img {
   padding: 20px;
-  width: 200px;
+  width: 250px;
 }
 
 .home {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 .home__location {
   display: flex;
   align-content: center;
   justify-content: center;
-  width: 100%;
   background-color: #eaeaea;
   box-shadow: 4px 4px 12px #bfbfbf;
   font-size: 15px;
+  font-weight: bold;
 }
 .home__cities {
   border: none;
-  width: 250px;
   background-color: transparent;
-  padding: 10px;
-}
-.home__location i {
-  color: #020202;
-  font-size: 17px;
+  padding: 15px;
 }
 .home__location p {
   font-family: "Roboto", sans-serif;
@@ -186,7 +172,6 @@ h1 img {
 }
 
 input[type=search]:focus {
-  box-sizing: border-box;
   outline: none;
   font-family: "Roboto", sans-serif;
   font-size: 15px;
@@ -198,14 +183,8 @@ input[type=search]:focus {
   border: 1px transparent;
   color: black;
   font-size: 15px;
-  width: 100%;
   font-weight: bold;
   font-family: "Roboto", sans-serif;
-}
-
-.search-cities {
-  padding: 10px;
-  margin-left: 90px;
 }
 
 .home__slogan {
@@ -248,10 +227,10 @@ input[type=search]:focus {
 
 .return {
   position: absolute;
-  left: 30px;
-  top: 20px;
+  left: 10px;
+  top: 30px;
   color: black;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .ban img {
@@ -413,7 +392,6 @@ article {
   top: 15px;
   padding: 6px 11px;
   border-radius: 3px;
-  animation: new-restaurant 1.2s ease-out infinite;
 }
 .card__info {
   display: flex;
@@ -660,6 +638,7 @@ input[type=radio]:checked + .fas {
 }
 
 .btn-Order {
+  cursor: pointer;
   border: none;
   color: white;
 }

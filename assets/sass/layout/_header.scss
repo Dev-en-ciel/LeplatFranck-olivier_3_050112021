@@ -5,34 +5,28 @@ h1 {
   text-align: center;
   & img {
     padding: 20px;
-    width: 200px;
+    width: 250px;
   }
 }
 // part location city
 .home {
   display: flex;
   flex-direction: column;
-  width: 100%;
   &__location {
     display: flex;
     align-content: center;
     justify-content: center;
-    width: 100%;
     background-color: $color-font-location;
     box-shadow: $box-shadow;
     font-size: 15px;
+    font-weight: bold;
   }
   &__cities {
     border: none;
-    width: 250px;
     background-color: transparent;
-    padding: 10px;
+    padding: 15px;
   }
 
-  &__location i {
-    color: rgb(2, 2, 2);
-    font-size: 17px;
-  }
   &__location p {
     font-family: $font-text;
     font-weight: 500;
@@ -40,7 +34,6 @@ h1 {
   }
 }
 input[type="search"]:focus {
-box-sizing: border-box;
   outline: none;
   font-family: $font-text;
   font-size: 15px;
@@ -51,14 +44,10 @@ box-sizing: border-box;
   border: 1px transparent;
   color: black;
   font-size: 15px;
-  width: 100%;
   font-weight: bold;
   font-family: $font-text;
 }
-.search-cities{
-padding: 10px;
-margin-left: 90px;
-}
+
 // part title and slogan
 .home__slogan {
   display: flex;
@@ -94,10 +83,10 @@ margin-left: 90px;
 // debut du header des pages restaurants
 .return {
   position: absolute;
-  left: 30px;
-  top: 20px;
+  left: 10px;
+  top: 30px;
   color: black;
-  font-size: 30px;
+  font-size: 25px;
 }
 .ban img {
   width: 100%;

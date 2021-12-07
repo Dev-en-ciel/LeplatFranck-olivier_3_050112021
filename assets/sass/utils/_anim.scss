@@ -58,15 +58,7 @@
     opacity: 0;
   }
 }
-// animation plus (optionnelle)new.
-@keyframes new-restaurant{
-from{
-box-shadow:0 0 0 -2px rgba(0, 135, 101, 0.295),0 0 0 0 rgb(0, 133, 99)
-}
-to {
-box-shadow:0 0 0 3px rgb(0,135,101,0),0 0 0 4px rgb(24, 197, 154)
-}
-}
+
 
 // animation des bouton menu
 @keyframes Menu-Card {

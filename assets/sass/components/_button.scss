@@ -69,17 +69,16 @@
     }
   }
 }
-.btn-Order  {
-align-self: center;
-@include btn;
-padding: 20px;
-width: 200px;
-& a{
-
-color: white;
-}
+.btn-Order {
+  align-self: center;
+  @include btn;
+  padding: 20px;
+  width: 200px;
+  & a {
+    color: white;
+  }
 }
 
 .btn-Order:hover {
-@include btn-hover;
+  @include btn-hover;
 }
