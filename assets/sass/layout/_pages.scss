@@ -21,8 +21,8 @@ main {
   font-family: $font-title;
   background-color: #f6f6f6;
   width: 100%;
-  & h2{ 
-  margin-left: 20px;
+  & h2 {
+    margin-left: 20px;
   }
   h2,
   .heart__vide {
@@ -173,6 +173,7 @@ input[type="radio"]:checked + .fas {
 }
 
 .btn-Order {
+  cursor: pointer;
   border: none;
   color: white;
 }
